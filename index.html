@@ -7,61 +7,73 @@
     <title>Lễ Thành Hôn Long & Hương - 01/02/2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Italiana&family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
         rel="stylesheet">
     <style>
         body {
             box-sizing: border-box;
+            overflow-x: hidden;
+            position: relative;
         }
 
-        .font-dancing {
-            font-family: 'Dancing Script', cursive;
+        /* New elegant font families */
+        .font-italiana {
+            font-family: 'Italiana', serif;
+            letter-spacing: 0.02em;
         }
 
-        .font-playfair {
-            font-family: 'Playfair Display', serif;
+        .font-cormorant {
+            font-family: 'Cormorant Garamond', serif;
         }
 
-        .font-inter {
-            font-family: 'Inter', sans-serif;
+        .font-cinzel {
+            font-family: 'Cinzel', serif;
+            letter-spacing: 0.05em;
         }
 
-        .gradient-blue {
-            background: linear-gradient(135deg, rgb(216, 226, 243) 0%, rgb(200, 215, 240) 25%, rgb(180, 200, 235) 50%, rgb(160, 185, 230) 75%, rgb(140, 170, 225) 100%);
-            box-shadow: 0 8px 32px rgba(140, 170, 225, 0.3);
+        .font-montserrat {
+            font-family: 'Montserrat', sans-serif;
         }
 
-        .gradient-white {
-            background: linear-gradient(135deg, #ffffff 0%, rgb(250, 252, 255) 25%, rgb(245, 248, 252) 50%, rgb(240, 245, 250) 75%, rgb(235, 242, 250) 100%);
-            box-shadow: 0 8px 32px rgba(216, 226, 243, 0.3);
+        /* Updated gradients to elegant blue-purple tones */
+        .gradient-gold {
+            background: linear-gradient(135deg, #E8E3F5 0%, #D4C9E8 25%, #B8A9D4 50%, #9D8FD4 75%, #8B7BC8 100%);
+            box-shadow: 0 8px 32px rgba(107, 78, 155, 0.3);
         }
 
+        .gradient-cream {
+            background: linear-gradient(135deg, #F5F2FA 0%, #EDE8F7 25%, #E8E3F5 50%, #DED7F0 75%, #D4C9E8 100%);
+            box-shadow: 0 8px 32px rgba(180, 169, 212, 0.3);
+        }
+
+        /* Elegant text gradient with gold and bronze tones */
         .text-gradient {
-            background: linear-gradient(135deg, rgb(100, 140, 200), rgb(120, 155, 210), rgb(140, 170, 225), rgb(160, 185, 230));
+            background: linear-gradient(135deg, #5A4080, #6B4E9B, #7B5FA3, #8B7BC8);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            filter: drop-shadow(2px 2px 4px rgba(140, 170, 225, 0.3));
+            filter: drop-shadow(2px 2px 4px rgba(90, 64, 128, 0.2));
         }
 
+        /* Luxury border with gold accent */
         .luxury-border {
             border: 2px solid transparent;
             background: linear-gradient(white, white) padding-box,
-                linear-gradient(135deg, rgb(216, 226, 243), rgb(180, 200, 235), rgb(140, 170, 225)) border-box;
+                linear-gradient(135deg, #B8A9D4, #8B7BC8, #7B5FA3) border-box;
         }
 
         .crystal-effect {
             backdrop-filter: blur(20px);
-            background: rgba(255, 255, 255, 0.85);
-            border: 1px solid rgba(216, 226, 243, 0.3);
-            box-shadow: 0 25px 45px rgba(140, 170, 225, 0.1),
-                inset 0 1px 0 rgba(255, 255, 255, 0.9);
+            background: rgba(255, 255, 255, 0.92);
+            border: 1px solid rgba(180, 169, 212, 0.3);
+            box-shadow: 0 25px 45px rgba(107, 78, 155, 0.08),
+                inset 0 1px 0 rgba(255, 255, 255, 0.95);
         }
 
         .premium-shadow {
-            box-shadow: 0 20px 60px rgba(140, 170, 225, 0.12),
-                0 8px 25px rgba(140, 170, 225, 0.08),
-                0 2px 8px rgba(140, 170, 225, 0.06);
+            box-shadow: 0 20px 60px rgba(90, 64, 128, 0.1),
+                0 8px 25px rgba(107, 78, 155, 0.08),
+                0 2px 8px rgba(180, 169, 212, 0.06);
         }
 
         .floating {
@@ -112,14 +124,17 @@
             }
         }
 
+        /* Luxurious background pattern with subtle texture and elegant gradients */
         .luxury-pattern {
             background:
-                radial-gradient(circle at 25% 25%, rgba(216, 226, 243, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 75% 75%, rgba(140, 170, 225, 0.08) 0%, transparent 50%),
-                linear-gradient(135deg, #ffffff 0%, rgb(252, 253, 255) 25%, rgb(248, 250, 254) 50%, rgb(244, 247, 252) 75%, rgb(240, 244, 250) 100%);
+                radial-gradient(circle at 20% 30%, rgba(180, 169, 212, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(139, 123, 200, 0.06) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(232, 227, 245, 0.5) 0%, transparent 70%),
+                linear-gradient(135deg, #F5F2FA 0%, #EDE8F7 20%, #E8E3F5 40%, #DED7F0 60%, #D4C9E8 80%, #C9BEE3 100%);
             position: relative;
         }
 
+        /* Elegant damask-inspired pattern overlay */
         .luxury-pattern::before {
             content: '';
             position: absolute;
@@ -127,66 +142,71 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d8e2f3' fill-opacity='0.03'%3E%3Cpath d='M60 60c0-16.569-13.431-30-30-30s-30 13.431-30 30 13.431 30 30 30 30-13.431 30-30zm0 0c0 16.569 13.431 30 30 30s30-13.431 30-30-13.431-30-30-30-30 13.431-30 30z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%238B7BC8' fill-opacity='0.02'%3E%3Cpath d='M50 0C50 27.614 27.614 50 0 50s50 22.386 50 50 22.386-50 50-50S50 27.614 50 0z'/%3E%3C/g%3E%3C/svg%3E");
             pointer-events: none;
+            opacity: 0.6;
         }
 
+        /* Refined music control with gold accent */
         .music-control {
             position: fixed;
-            top: 30px;
-            right: 30px;
+            top: 20px;
+            right: 20px;
             z-index: 1000;
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(248, 250, 254, 0.9));
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(237, 232, 247, 0.95));
             backdrop-filter: blur(25px);
             border-radius: 50%;
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            border: 2px solid rgba(216, 226, 243, 0.4);
-            box-shadow: 0 15px 35px rgba(140, 170, 225, 0.1),
-                0 5px 15px rgba(216, 226, 243, 0.2),
-                inset 0 1px 0 rgba(255, 255, 255, 0.8);
+            border: 2px solid rgba(180, 169, 212, 0.4);
+            box-shadow: 0 15px 35px rgba(90, 64, 128, 0.1),
+                0 5px 15px rgba(107, 78, 155, 0.15),
+                inset 0 1px 0 rgba(255, 255, 255, 0.9);
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .music-control:hover {
             transform: scale(1.15) rotate(5deg);
-            box-shadow: 0 20px 45px rgba(140, 170, 225, 0.15),
-                0 8px 25px rgba(216, 226, 243, 0.3),
-                inset 0 1px 0 rgba(255, 255, 255, 0.9);
-            border-color: rgba(140, 170, 225, 0.6);
+            box-shadow: 0 20px 45px rgba(90, 64, 128, 0.15),
+                0 8px 25px rgba(107, 78, 155, 0.25),
+                inset 0 1px 0 rgba(255, 255, 255, 0.95);
+            border-color: rgba(139, 123, 200, 0.6);
         }
 
+        /* Elegant divider with gold gradient */
         .section-divider {
-            background: linear-gradient(90deg, transparent, rgb(180, 200, 235), transparent);
+            background: linear-gradient(90deg, transparent, #B8A9D4, #8B7BC8, #B8A9D4, transparent);
             height: 1px;
-            margin: 3rem 0;
+            margin: 2rem 0;
+            opacity: 0.4;
         }
 
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 1rem;
         }
 
+        /* Refined gallery items with cream and gold tones */
         .gallery-item {
             aspect-ratio: 1;
-            background: linear-gradient(135deg, rgb(240, 245, 250) 0%, rgb(230, 238, 248) 50%, rgb(216, 226, 243) 100%);
-            border-radius: 20px;
+            background: linear-gradient(135deg, #E8E3F5 0%, #D4C9E8 50%, #C9BEE3 100%);
+            border-radius: 15px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: rgb(80, 120, 180);
-            font-size: 1.3rem;
-            font-weight: 700;
+            color: #5A4080;
+            font-size: 1.1rem;
+            font-weight: 600;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             cursor: pointer;
-            border: 2px solid rgba(216, 226, 243, 0.5);
-            box-shadow: 0 10px 30px rgba(140, 170, 225, 0.1),
-                0 4px 15px rgba(216, 226, 243, 0.2);
+            border: 2px solid rgba(180, 169, 212, 0.4);
+            box-shadow: 0 10px 30px rgba(90, 64, 128, 0.08),
+                0 4px 15px rgba(107, 78, 155, 0.12);
             position: relative;
             overflow: hidden;
         }
@@ -198,15 +218,15 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
             transition: left 0.6s ease;
         }
 
         .gallery-item:hover {
-            transform: scale(1.08) rotate(2deg);
-            box-shadow: 0 20px 50px rgba(140, 170, 225, 0.15),
-                0 8px 25px rgba(216, 226, 243, 0.3);
-            border-color: rgba(140, 170, 225, 0.7);
+            transform: scale(1.05) rotate(1deg);
+            box-shadow: 0 15px 40px rgba(90, 64, 128, 0.12),
+                0 6px 20px rgba(107, 78, 155, 0.2);
+            border-color: rgba(139, 123, 200, 0.7);
         }
 
         .gallery-item:hover::before {
@@ -216,10 +236,12 @@
         .nav-link {
             transition: all 0.3s ease;
             position: relative;
+            font-size: 0.95rem;
         }
 
+        /* Gold hover color for navigation */
         .nav-link:hover {
-            color: rgb(120, 155, 210);
+            color: #7B5FA3;
         }
 
         .nav-link::after {
@@ -229,7 +251,7 @@
             height: 2px;
             bottom: -5px;
             left: 50%;
-            background: rgb(140, 170, 225);
+            background: #8B7BC8;
             transition: all 0.3s ease;
         }
 
@@ -238,102 +260,597 @@
             left: 0;
         }
 
+        /* Refined QR container with cream background */
         .qr-container {
             width: 150px;
             height: 150px;
-            background: #ffffff;
-            border: 2px solid rgb(216, 226, 243);
+            background: #F5F2FA;
+            border: 2px solid #C9BEE3;
             border-radius: 15px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             font-size: 0.9rem;
-            color: rgb(100, 140, 200);
+            color: #5A4080;
             text-align: center;
-            box-shadow: 0 8px 25px rgba(216, 226, 243, 0.2);
+            box-shadow: 0 8px 25px rgba(107, 78, 155, 0.15);
             cursor: pointer;
             transition: all 0.3s ease;
         }
 
         .qr-container:hover {
             transform: scale(1.05);
-            box-shadow: 0 12px 35px rgba(216, 226, 243, 0.3);
+            box-shadow: 0 12px 35px rgba(107, 78, 155, 0.25);
         }
 
+        /* Elegant button with gold gradient */
         .btn-elegant {
-            background: linear-gradient(135deg, rgb(216, 226, 243), rgb(200, 215, 240));
-            color: rgb(80, 120, 180);
-            border: 1px solid rgba(140, 170, 225, 0.3);
+            background: linear-gradient(135deg, #C9BEE3, #B8A9D4);
+            color: #3D2E5A;
+            border: 1px solid rgba(139, 123, 200, 0.3);
             transition: all 0.3s ease;
+            font-size: 0.95rem;
+            font-weight: 500;
         }
 
         .btn-elegant:hover {
-            background: linear-gradient(135deg, rgb(200, 215, 240), rgb(180, 200, 235));
+            background: linear-gradient(135deg, #B8A9D4, #9D8FD4);
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(140, 170, 225, 0.2);
+            box-shadow: 0 8px 25px rgba(90, 64, 128, 0.2);
+        }
+
+        .falling-element {
+            position: fixed;
+            top: -50px;
+            font-size: 1.5rem;
+            animation: fall linear infinite;
+            pointer-events: none;
+            z-index: 999;
+            opacity: 0.7;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-100vh) rotate(0deg);
+                opacity: 0.7;
+            }
+
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* Refined gift box with cream and gold styling */
+        .gift-box {
+            position: relative;
+            cursor: pointer;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #E8E3F5, #C9BEE3);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(107, 78, 155, 0.25);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid rgba(180, 169, 212, 0.3);
+        }
+
+        .gift-box:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 40px rgba(107, 78, 155, 0.35);
+        }
+
+        .gift-box::before {
+            content: '🎁';
+            font-size: 4rem;
+        }
+
+        .gift-content {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            transform: translateY(20px);
+        }
+
+        .gift-content.open {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 480px) {
+            .music-control {
+                width: 45px;
+                height: 45px;
+                top: 15px;
+                right: 15px;
+                font-size: 1.2rem;
+            }
+
+            nav .container {
+                padding: 0.75rem 1rem;
+            }
+
+            nav .flex {
+                flex-wrap: wrap;
+                gap: 0.5rem;
+                justify-content: center;
+            }
+
+            .nav-link {
+                font-size: 0.8rem;
+                padding: 0.25rem 0.5rem;
+            }
+
+            .section-divider {
+                margin: 1.5rem 0;
+            }
+
+            #home {
+                padding-top: 8rem;
+                padding-bottom: 2rem;
+            }
+
+            #home h1 {
+                font-size: clamp(2rem, 10vw, 3rem) !important;
+                margin-bottom: 1.5rem;
+                line-height: 1.3;
+            }
+
+            #home .text-3xl {
+                font-size: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            #home .text-xl {
+                font-size: 1rem;
+                margin-bottom: 2rem;
+                padding: 0 1rem;
+            }
+
+            .gradient-gold {
+                padding: 0.75rem 2rem;
+                font-size: 1.1rem;
+                margin-bottom: 2rem;
+            }
+
+            #home .w-80 {
+                width: 200px;
+                height: 200px;
+                font-size: 4rem;
+                margin-bottom: 2rem;
+            }
+
+            #home p {
+                font-size: 0.95rem;
+                padding: 0 1rem;
+            }
+
+            #wedding-info {
+                padding: 2rem 0;
+            }
+
+            #wedding-info h2 {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            #wedding-info .grid {
+                gap: 1.5rem;
+            }
+
+            #wedding-info .crystal-effect {
+                padding: 1.5rem;
+                border-radius: 1.5rem;
+            }
+
+            #wedding-info .w-20 {
+                width: 60px;
+                height: 60px;
+                margin-bottom: 1rem;
+            }
+
+            #wedding-info h3 {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+
+            #wedding-info .space-y-4 {
+                font-size: 0.9rem;
+            }
+
+            #wedding-info .flex {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+
+            .btn-elegant {
+                padding: 0.6rem 1.5rem;
+                font-size: 0.85rem;
+            }
+
+            #wedding-info .mt-16 {
+                margin-top: 2rem;
+            }
+
+            #wedding-info .mt-16 h3 {
+                font-size: 1.75rem;
+                margin-bottom: 1.5rem;
+            }
+
+            #wedding-info .mt-16 .crystal-effect {
+                padding: 1.5rem;
+            }
+
+            #wedding-info .mt-16 h4 {
+                font-size: 1.3rem;
+                margin-bottom: 1rem;
+            }
+
+            #wedding-info .space-y-3 {
+                font-size: 0.9rem;
+            }
+
+            #love-story {
+                padding: 2rem 0;
+            }
+
+            #love-story h2 {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            #love-story .crystal-effect {
+                padding: 2rem 1.5rem;
+                border-radius: 1.5rem;
+            }
+
+            #love-story .w-24 {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 1.5rem;
+                font-size: 2.5rem;
+            }
+
+            #love-story .prose {
+                font-size: 0.95rem;
+            }
+
+            #love-story .text-xl {
+                font-size: 1.1rem;
+                margin-bottom: 1.5rem;
+            }
+
+            #love-story .text-lg {
+                font-size: 1rem;
+            }
+
+            #love-story .grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.75rem;
+                margin-top: 2rem;
+            }
+
+            #gallery {
+                padding: 2rem 0;
+            }
+
+            #gallery h2 {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.75rem;
+            }
+
+            .gallery-item {
+                border-radius: 12px;
+                font-size: 0.95rem;
+            }
+
+            #gift {
+                padding: 2rem 0;
+            }
+
+            #gift h2 {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            #gift .gift-box {
+                width: 150px;
+                height: 150px;
+            }
+
+            #gift .gift-content .grid {
+                gap: 1.5rem;
+            }
+
+            #gift .crystal-effect {
+                padding: 1.5rem;
+                border-radius: 1.5rem;
+            }
+
+            #gift .w-20 {
+                width: 60px;
+                height: 60px;
+                margin-bottom: 1.5rem;
+                font-size: 2rem;
+            }
+
+            #gift h3 {
+                font-size: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .qr-container {
+                width: 130px;
+                height: 130px;
+            }
+
+            .qr-container img {
+                width: 110px !important;
+                height: 110px !important;
+            }
+
+            #gift .space-y-3 {
+                font-size: 0.85rem;
+                padding: 1rem;
+            }
+
+            #gift .text-lg {
+                font-size: 1rem;
+            }
+
+            section:last-of-type {
+                padding: 2rem 0;
+            }
+
+            section:last-of-type .w-28 {
+                width: 100px;
+                height: 100px;
+                font-size: 3rem;
+                margin-bottom: 2rem;
+            }
+
+            section:last-of-type h2 {
+                font-size: 2.5rem;
+                margin-bottom: 2rem;
+            }
+
+            section:last-of-type .text-lg {
+                font-size: 0.95rem;
+                padding: 0 1rem;
+            }
+
+            section:last-of-type .text-2xl {
+                font-size: 1.3rem;
+            }
+
+            section:last-of-type .font-italiana {
+                font-size: 1.5rem;
+            }
+
+            footer {
+                padding: 1.5rem 0;
+                font-size: 0.85rem;
+            }
+
+            .falling-element {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (min-width: 481px) and (max-width: 768px) {
+            .music-control {
+                width: 55px;
+                height: 55px;
+                top: 20px;
+                right: 20px;
+            }
+
+            nav .flex {
+                gap: 1rem;
+            }
+
+            .nav-link {
+                font-size: 0.9rem;
+            }
+
+            #home h1 {
+                font-size: clamp(2.5rem, 8vw, 4rem) !important;
+            }
+
+            #home .text-3xl {
+                font-size: 1.75rem;
+            }
+
+            #home .text-xl {
+                font-size: 1.1rem;
+            }
+
+            #home .w-80 {
+                width: 250px;
+                height: 250px;
+                font-size: 5rem;
+            }
+
+            .gradient-gold {
+                padding: 1rem 2.5rem;
+                font-size: 1.3rem;
+            }
+
+            #wedding-info .crystal-effect,
+            #love-story .crystal-effect,
+            #gift .crystal-effect {
+                padding: 2rem;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+
+            .qr-container {
+                width: 140px;
+                height: 140px;
+            }
+
+            .qr-container img {
+                width: 120px !important;
+                height: 120px !important;
+            }
+
+            .gift-box {
+                width: 180px;
+                height: 180px;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .gallery-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            #wedding-info .grid,
+            #gift .grid {
+                gap: 2rem;
+            }
+        }
+
+        @media (max-height: 600px) and (orientation: landscape) {
+            #home {
+                padding-top: 4rem;
+                padding-bottom: 1rem;
+            }
+
+            #home .w-80 {
+                width: 150px;
+                height: 150px;
+                font-size: 3rem;
+                margin-bottom: 1rem;
+            }
+
+            .floating {
+                animation: none;
+            }
+
+            section {
+                padding: 1.5rem 0;
+            }
+
+            .gift-box {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            .max-w-6xl,
+            .max-w-5xl,
+            .max-w-4xl,
+            .max-w-3xl {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+                line-height: 1.6;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
 
-<body class="font-inter luxury-pattern">
-    <!-- Music Control -->
+<body class="font-montserrat luxury-pattern">
+    Music Control
     <div class="music-control" onclick="toggleMusic()">
         <span id="musicIcon">🎵</span>
     </div>
 
-    <!-- Audio Element with autoplay -->
     <audio id="backgroundMusic" loop preload="auto" autoplay>
-        <!-- Placeholder source (replace with a valid "Beautiful in White" URL) -->
         <source src="audio/beautiful.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
-    <!-- Navigation -->
+    Navigation
+    Updated navigation with new font and colors
     <nav class="fixed top-0 w-full crystal-effect z-50 border-b border-white/20">
         <div class="container mx-auto px-6 py-4">
-            <div class="flex justify-center space-x-12">
-                <a href="#home" class="nav-link text-gray-700 hover:text-blue-600 font-semibold tracking-wide">Trang
+            <div class="flex justify-center space-x-12 font-cinzel">
+                <a href="#home" class="nav-link text-gray-700 hover:text-purple-700 font-medium tracking-wide">Trang
                     Chủ</a>
                 <a href="#wedding-info"
-                    class="nav-link text-gray-700 hover:text-blue-600 font-semibold tracking-wide">Thông Tin</a>
-                <a href="#love-story" class="nav-link text-gray-700 hover:text-blue-600 font-semibold tracking-wide">Câu
+                    class="nav-link text-gray-700 hover:text-purple-700 font-medium tracking-wide">Thông Tin</a>
+                <a href="#love-story" class="nav-link text-gray-700 hover:text-purple-700 font-medium tracking-wide">Câu
                     Chuyện</a>
                 <a href="#gallery"
-                    class="nav-link text-gray-700 hover:text-blue-600 font-semibold tracking-wide">Album</a>
-                <a href="#gift" class="nav-link text-gray-700 hover:text-blue-600 font-semibold tracking-wide">Mừng
+                    class="nav-link text-gray-700 hover:text-purple-700 font-medium tracking-wide">Album</a>
+                <a href="#gift" class="nav-link text-gray-700 hover:text-purple-700 font-medium tracking-wide">Mừng
                     Cưới</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    Hero Section
+    Updated hero with elegant Italiana font and refined styling
     <section id="home" class="min-h-full flex items-center justify-center pt-20 pb-16">
         <div class="container mx-auto px-4 text-center">
             <div class="fade-in">
-                <h1 class="font-dancing text-gradient mb-6 floating"
-                    style="text-shadow: 0 6px 12px rgba(140, 170, 225, 0.3); letter-spacing: 0.05em; font-weight: 700; font-size: clamp(2rem, 8vw, 6rem); line-height: 1.2;">
+                <h1 class="font-italiana text-gradient mb-6 floating"
+                    style="text-shadow: 0 6px 12px rgba(90, 64, 128, 0.2); letter-spacing: 0.08em; font-weight: 400; font-size: clamp(2rem, 8vw, 6rem); line-height: 1.3;">
                     Lê Thanh Long<br>
-                    <span style="font-size: 0.7em; margin: 0.2em 0; display: inline-block;">&</span><br>
+                    <span style="font-size: 0.7em; margin: 0.3em 0; display: inline-block;">&</span><br>
                     Lê Thị Thu Hương
                 </h1>
-                <div class="text-3xl md:text-4xl font-playfair text-gray-700 mb-8 tracking-wider">
-                    Lễ Thành Hôn
+                <div class="text-3xl md:text-4xl font-cinzel text-gray-700 mb-8 tracking-widest"
+                    style="color: #5A4080;">
+                    LỄ THÀNH HÔN
                 </div>
-                <div
-                    class="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed font-playfair italic">
+                <div class="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed font-cormorant italic"
+                    style="color: #6B4E9B;">
                     "Hôn nhân là chuyện cả đời,<br>
                     Yêu người vừa ý, cưới người mình thương"
                 </div>
-                <div
-                    class="gradient-blue text-white px-12 py-5 rounded-full inline-block text-2xl font-bold mb-12 luxury-border tracking-widest">
+                <div class="gradient-gold text-black px-12 py-5 rounded-full inline-block text-2xl font-semibold mb-12 luxury-border tracking-widest font-cinzel"
+                    style="color: #3D2E5A;">
                     01 • 02 • 2025
                 </div>
                 <div
-                    class="w-80 h-80 mx-auto gradient-white rounded-full flex items-center justify-center text-8xl mb-12 floating premium-shadow">
+                    class="w-80 h-80 mx-auto gradient-cream rounded-full flex items-center justify-center text-8xl mb-12 floating premium-shadow">
                     💕
                 </div>
-                <p class="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+                <p class="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed font-cormorant"
+                    style="color: #6B4E9B; font-size: 1.125rem; line-height: 1.8;">
                     Với niềm hạnh phúc và lòng biết ơn sâu sắc, vợ chồng em trân trọng kính mời quý khách đến dự lễ
                     thành hôn của vợ chồng em. Sự hiện diện của quý khách sẽ là niềm vinh hạnh và là món quà ý nghĩa
                     nhất cho ngày trọng đại này.
@@ -344,81 +861,88 @@
 
     <div class="section-divider"></div>
 
-    <!-- Wedding Info Section -->
+    Wedding Info Section
+    Updated section headers with Cinzel font
     <section id="wedding-info" class="py-16">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl md:text-5xl font-dancing text-center text-gradient mb-16">
-                Thông Tin Lễ Cưới
+            <h2 class="text-4xl md:text-5xl font-cinzel text-center text-gradient mb-16 tracking-wider">
+                THÔNG TIN LỄ CƯỚI
             </h2>
 
             <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
-                <!-- Lễ Rước Dâu -->
                 <div
                     class="crystal-effect rounded-3xl p-10 premium-shadow hover:shadow-2xl transition-all duration-500 luxury-border">
                     <div class="text-center mb-8">
                         <div
-                            class="w-20 h-20 gradient-white rounded-full flex items-center justify-center mx-auto mb-6 premium-shadow">
+                            class="w-20 h-20 gradient-cream rounded-full flex items-center justify-center mx-auto mb-6 premium-shadow">
                             <span class="text-3xl">💒</span>
                         </div>
-                        <h3 class="text-3xl font-playfair text-gray-700 mb-3 tracking-wide">Lễ Rước Dâu</h3>
+                        <h3 class="text-3xl font-cinzel text-gray-700 mb-3 tracking-wide" style="color: #5A4080;">Lễ
+                            Rước Dâu</h3>
                     </div>
-                    <div class="space-y-4 text-center">
+                    <div class="space-y-4 text-center font-cormorant">
                         <div class="flex items-center justify-center space-x-3">
-                            <span class="text-blue-500">🕐</span>
-                            <span class="text-gray-600 font-medium">08:00 - Chủ nhật, 01/02/2025</span>
+                            <span style="color: #8B7BC8;">🕐</span>
+                            <span class="text-gray-600 font-medium" style="color: #6B4E9B;">08:00 - Chủ nhật,
+                                01/02/2025</span>
                         </div>
                         <div class="flex items-center justify-center space-x-3">
-                            <span class="text-blue-500">📍</span>
-                            <span class="text-gray-600">Nhà Văn Hóa thôn Lễ Pháp, Đông Anh, Hà Nội</span>
+                            <span style="color: #8B7BC8;">📍</span>
+                            <span class="text-gray-600" style="color: #6B4E9B;">Nhà Văn Hóa thôn Lễ Pháp, Đông Anh, Hà
+                                Nội</span>
                         </div>
                         <button onclick="openMap('Nhà Văn Hóa thôn Lễ Pháp, Đông Anh, Hà Nội')"
-                            class="btn-elegant px-6 py-3 rounded-full mt-4">
+                            class="btn-elegant px-6 py-3 rounded-full mt-4 font-montserrat">
                             Xem Chỉ Đường
                         </button>
                     </div>
                 </div>
 
-                <!-- Tiệc Cưới -->
                 <div
                     class="crystal-effect rounded-3xl p-10 premium-shadow hover:shadow-2xl transition-all duration-500 luxury-border">
                     <div class="text-center mb-8">
                         <div
-                            class="w-20 h-20 gradient-blue rounded-full flex items-center justify-center mx-auto mb-6 premium-shadow">
+                            class="w-20 h-20 gradient-gold rounded-full flex items-center justify-center mx-auto mb-6 premium-shadow">
                             <span class="text-3xl text-white">🎉</span>
                         </div>
-                        <h3 class="text-3xl font-playfair text-gray-700 mb-3 tracking-wide">Tiệc Cưới</h3>
+                        <h3 class="text-3xl font-cinzel text-gray-700 mb-3 tracking-wide" style="color: #5A4080;">Tiệc
+                            Cưới</h3>
                     </div>
-                    <div class="space-y-4 text-center">
+                    <div class="space-y-4 text-center font-cormorant">
                         <div class="flex items-center justify-center space-x-3">
-                            <span class="text-blue-500">🕕</span>
-                            <span class="text-gray-600 font-medium">18:00 - Chủ nhật, 01/02/2025</span>
+                            <span style="color: #8B7BC8;">🕕</span>
+                            <span class="text-gray-600 font-medium" style="color: #6B4E9B;">18:00 - Chủ nhật,
+                                01/02/2025</span>
                         </div>
                         <div class="flex items-center justify-center space-x-3">
-                            <span class="text-blue-500">📍</span>
-                            <span class="text-gray-600">Nhà Văn Hóa thôn Lễ Pháp, Đông Anh, Hà Nội</span>
+                            <span style="color: #8B7BC8;">📍</span>
+                            <span class="text-gray-600" style="color: #6B4E9B;">Nhà Văn Hóa thôn Lễ Pháp, Đông Anh, Hà
+                                Nội</span>
                         </div>
                         <button onclick="openMap('Nhà Văn Hóa thôn Lễ Pháp, Đông Anh, Hà Nội')"
-                            class="btn-elegant px-6 py-3 rounded-full mt-4">
+                            class="btn-elegant px-6 py-3 rounded-full mt-4 font-montserrat">
                             Xem Chỉ Đường
                         </button>
                     </div>
                 </div>
             </div>
 
-            <!-- Family Info -->
+            Family Info
             <div class="mt-16 max-w-4xl mx-auto">
-                <h3 class="text-3xl font-dancing text-center text-gradient mb-12">Thông Tin Gia Đình</h3>
+                <h3 class="text-3xl font-cinzel text-center text-gradient mb-12 tracking-wider">THÔNG TIN GIA ĐÌNH</h3>
                 <div class="grid md:grid-cols-2 gap-10">
                     <div class="crystal-effect rounded-3xl p-8 text-center premium-shadow luxury-border">
-                        <h4 class="text-2xl font-playfair text-gray-700 mb-6 tracking-wide">👨‍👩‍👦 Nhà Trai</h4>
-                        <div class="space-y-3 text-gray-600 text-lg">
+                        <h4 class="text-2xl font-cinzel text-gray-700 mb-6 tracking-wide" style="color: #5A4080;">
+                            👨‍👩‍👦 Nhà Trai</h4>
+                        <div class="space-y-3 text-gray-600 text-lg font-cormorant" style="color: #6B4E9B;">
                             <p><strong>Bố:</strong> Kiều Duy Mậu</p>
                             <p><strong>Mẹ:</strong> Nguyễn Thị Thắng</p>
                         </div>
                     </div>
                     <div class="crystal-effect rounded-3xl p-8 text-center premium-shadow luxury-border">
-                        <h4 class="text-2xl font-playfair text-gray-700 mb-6 tracking-wide">👩‍👧 Nhà Gái</h4>
-                        <div class="space-y-3 text-gray-600 text-lg">
+                        <h4 class="text-2xl font-cinzel text-gray-700 mb-6 tracking-wide" style="color: #5A4080;">👩‍👧
+                            Nhà Gái</h4>
+                        <div class="space-y-3 text-gray-600 text-lg font-cormorant" style="color: #6B4E9B;">
                             <p><strong>Mẹ:</strong> Nguyễn Thị Oanh</p>
                         </div>
                     </div>
@@ -429,61 +953,57 @@
 
     <div class="section-divider"></div>
 
-    <!-- Love Story Section -->
+    Love Story Section
     <section id="love-story" class="py-16">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl md:text-5xl font-dancing text-center text-gradient mb-16">
-                Câu Chuyện Tình Yêu
+            <h2 class="text-4xl md:text-5xl font-cinzel text-center text-gradient mb-16 tracking-wider">
+                CÂU CHUYỆN TÌNH YÊU
             </h2>
 
             <div class="max-w-5xl mx-auto">
                 <div class="crystal-effect rounded-3xl p-12 md:p-16 premium-shadow luxury-border">
                     <div class="text-center mb-12">
                         <div
-                            class="w-24 h-24 gradient-white rounded-full flex items-center justify-center mx-auto mb-8 heart-beat premium-shadow">
+                            class="w-24 h-24 gradient-cream rounded-full flex items-center justify-center mx-auto mb-8 heart-beat premium-shadow">
                             <span class="text-4xl">💝</span>
                         </div>
                     </div>
 
-                    <div class="prose prose-lg mx-auto text-gray-600 leading-relaxed">
-                        <p class="text-center text-xl font-playfair mb-8 text-gray-700">
+                    <div class="prose prose-lg mx-auto text-gray-600 leading-relaxed font-cormorant"
+                        style="color: #6B4E9B;">
+                        <p class="text-center text-xl font-cinzel mb-8 text-gray-700"
+                            style="color: #5A4080; font-size: 1.25rem;">
                             "Tình yêu không chỉ là nhìn vào mắt nhau, mà là cùng nhau nhìn về một hướng"
                         </p>
 
-                        <p class="mb-6">
+                        <p class="mb-6" style="font-size: 1.125rem; line-height: 1.8;">
                             Câu chuyện tình yêu của vợ chồng em bắt đầu như một điều kỳ diệu. Từ những ngày đầu gặp gỡ,
                             vợ chồng em đã cảm nhận được sự đồng điệu đặc biệt - không chỉ trong suy nghĩ mà còn trong
                             cách nhìn nhận cuộc sống.
                         </p>
 
-                        <p class="mb-6">
+                        <p class="mb-6" style="font-size: 1.125rem; line-height: 1.8;">
                             Long với tính cách chín chắn, luôn quan tâm và che chở cho Hương. Còn Hương với nụ cười tươi
                             tắn, luôn mang đến niềm vui và sự ấm áp cho Long. Vợ chồng em đã cùng nhau trải qua những
                             khoảnh khắc vui buồn, chia sẻ những ước mơ và xây dựng những kế hoạch cho tương lai.
                         </p>
 
-                        <p class="mb-6">
+                        <p class="mb-6" style="font-size: 1.125rem; line-height: 1.8;">
                             Sau những năm tháng bên nhau, vợ chồng em nhận ra rằng tình yêu đích thực không chỉ là cảm
                             xúc mãnh liệt mà còn là sự thấu hiểu, tôn trọng và cùng nhau vượt qua mọi thử thách. Hôm
                             nay, vợ chồng em hạnh phúc tuyên bố trước mọi người về quyết định kết hôn - bước đầu cho
                             hành trình mới đầy yêu thương.
                         </p>
 
-                        <p class="text-center font-playfair text-lg text-gray-700 mt-8">
+                        <p class="text-center font-cinzel text-lg text-gray-700 mt-8" style="color: #5A4080;">
                             "Cảm ơn tình yêu đã đưa vợ chồng em đến với nhau ❤️"
                         </p>
                     </div>
 
                     <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-12">
-                        <div class="gallery-item">
-                            <span>Ảnh 1</span>
-                        </div>
-                        <div class="gallery-item">
-                            <span>Ảnh 2</span>
-                        </div>
-                        <div class="gallery-item">
-                            <span>Ảnh 3</span>
-                        </div>
+                        <div class="gallery-item font-montserrat"><span>Ảnh 1</span></div>
+                        <div class="gallery-item font-montserrat"><span>Ảnh 2</span></div>
+                        <div class="gallery-item font-montserrat"><span>Ảnh 3</span></div>
                     </div>
                 </div>
             </div>
@@ -492,36 +1012,24 @@
 
     <div class="section-divider"></div>
 
-    <!-- Gallery Section -->
+    Gallery Section
     <section id="gallery" class="py-16">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl md:text-5xl font-dancing text-center text-gradient mb-16">
-                Album Ảnh Cưới
+            <h2 class="text-4xl md:text-5xl font-cinzel text-center text-gradient mb-16 tracking-wider">
+                ALBUM ẢNH CƯỚI
             </h2>
 
             <div class="gallery-grid max-w-6xl mx-auto mb-12">
-                <div class="gallery-item">
-                    <span>Ảnh Cưới 1</span>
-                </div>
-                <div class="gallery-item">
-                    <span>Ảnh Cưới 2</span>
-                </div>
-                <div class="gallery-item">
-                    <span>Ảnh Cưới 3</span>
-                </div>
-                <div class="gallery-item">
-                    <span>Ảnh Cưới 4</span>
-                </div>
-                <div class="gallery-item">
-                    <span>Ảnh Cưới 5</span>
-                </div>
-                <div class="gallery-item">
-                    <span>Ảnh Cưới 6</span>
-                </div>
+                <div class="gallery-item font-montserrat"><span>Ảnh Cưới 1</span></div>
+                <div class="gallery-item font-montserrat"><span>Ảnh Cưới 2</span></div>
+                <div class="gallery-item font-montserrat"><span>Ảnh Cưới 3</span></div>
+                <div class="gallery-item font-montserrat"><span>Ảnh Cưới 4</span></div>
+                <div class="gallery-item font-montserrat"><span>Ảnh Cưới 5</span></div>
+                <div class="gallery-item font-montserrat"><span>Ảnh Cưới 6</span></div>
             </div>
 
             <div class="text-center">
-                <button onclick="loadMorePhotos()" class="btn-elegant px-8 py-3 rounded-full">
+                <button onclick="loadMorePhotos()" class="btn-elegant px-8 py-3 rounded-full font-montserrat">
                     Xem Thêm Ảnh
                 </button>
             </div>
@@ -530,73 +1038,74 @@
 
     <div class="section-divider"></div>
 
-    <!-- Gift Section -->
+    Gift Section
     <section id="gift" class="py-16">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl md:text-5xl font-dancing text-center text-gradient mb-16">
-                Hộp Mừng Cưới
+            <h2 class="text-4xl md:text-5xl font-cinzel text-center text-gradient mb-16 tracking-wider">
+                HỘP MỪNG CƯỚI
             </h2>
 
-            <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
-                <!-- Chú Rể -->
-                <div class="crystal-effect rounded-3xl p-10 premium-shadow text-center luxury-border">
-                    <div
-                        class="w-20 h-20 gradient-blue rounded-full flex items-center justify-center mx-auto mb-8 premium-shadow">
-                        <span class="text-3xl text-white">🤵</span>
-                    </div>
-                    <h3 class="text-3xl font-playfair text-gray-700 mb-8 tracking-wide">Chú Rể - Lê Thanh Long</h3>
-
-                    <!-- Thay div QR bằng hình ảnh -->
-                    <div class="qr-container mx-auto mb-6">
-                        <a href="imageQr/LeThanhLongQr.png" download="QR_Groom.png">
-                            <img src="imageQr/LeThanhLongQr.png" alt="QR Code Chú Rể"
-                                class="w-32 h-32 mx-auto mb-2 rounded-lg shadow-md">
-                        </a>
-                    </div>
-
-                    <div class="space-y-3 text-left bg-gray-50 p-4 rounded-lg">
-                        <div><strong>Ngân hàng:</strong> Vietcombank</div>
-                        <div><strong>Số tài khoản:</strong> 1234567890</div>
-                        <div><strong>Chủ tài khoản:</strong> LÊ THANH LONG</div>
-                    </div>
-
-                    <button onclick="copyAccountInfo('1234567890', 'LÊ THANH LONG')"
-                        class="btn-elegant px-6 py-3 rounded-full mt-4">
-                        Copy Thông Tin
-                    </button>
+            <div class="text-center mb-12">
+                <div class="gift-box" onclick="toggleGiftContent()">
                 </div>
+            </div>
 
-                <!-- Cô Dâu -->
-                <div class="crystal-effect rounded-3xl p-10 premium-shadow text-center luxury-border">
-                    <div
-                        class="w-20 h-20 gradient-white rounded-full flex items-center justify-center mx-auto mb-8 premium-shadow">
-                        <span class="text-3xl">👰</span>
+            <div id="giftContent" class="gift-content max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="crystal-effect rounded-3xl p-10 premium-shadow text-center luxury-border">
+                        <div
+                            class="w-20 h-20 gradient-gold rounded-full flex items-center justify-center mx-auto mb-8 premium-shadow">
+                            <span class="text-3xl text-white">🤵</span>
+                        </div>
+                        <h3 class="text-3xl font-cinzel text-gray-700 mb-8 tracking-wide" style="color: #5A4080;">Chú Rể
+                            - Lê Thanh Long</h3>
+                        <div class="qr-container mx-auto mb-6">
+                            <a href="imageQr/LeThanhLongQr.png" download="QR_Groom.png">
+                                <img src="imageQr/LeThanhLongQr.png" alt="QR Code Chú Rể"
+                                    class="w-32 h-32 mx-auto mb-2 rounded-lg shadow-md">
+                            </a>
+                        </div>
+                        <div class="space-y-3 text-left p-4 rounded-lg font-cormorant"
+                            style="background-color: #F5F2FA; color: #6B4E9B;">
+                            <div><strong>Ngân hàng:</strong> Vietcombank</div>
+                            <div><strong>Số tài khoản:</strong> 1234567890</div>
+                            <div><strong>Chủ tài khoản:</strong> LÊ THANH LONG</div>
+                        </div>
+                        <button onclick="copyAccountInfo('1234567890', 'LÊ THANH LONG')"
+                            class="btn-elegant px-6 py-3 rounded-full mt-4 font-montserrat">
+                            Copy Thông Tin
+                        </button>
                     </div>
-                    <h3 class="text-3xl font-playfair text-gray-700 mb-8 tracking-wide">Cô Dâu - Lê Thị Thu Hương</h3>
 
-                    <!-- Thay div QR bằng hình ảnh -->
-                    <div class="qr-container mx-auto mb-6">
-                        <a href="imageQr/LeThiThuHuongQr.png" download="QR_Bride.png">
-                            <img src="imageQr/LeThiThuHuongQr.png" alt="QR Code Cô Dâu"
-                                class="w-32 h-32 mx-auto mb-2 rounded-lg shadow-md">
-                        </a>
+                    <div class="crystal-effect rounded-3xl p-10 premium-shadow text-center luxury-border">
+                        <div
+                            class="w-20 h-20 gradient-cream rounded-full flex items-center justify-center mx-auto mb-8 premium-shadow">
+                            <span class="text-3xl">👰</span>
+                        </div>
+                        <h3 class="text-3xl font-cinzel text-gray-700 mb-8 tracking-wide" style="color: #5A4080;">Cô Dâu
+                            - Lê Thị Thu Hương</h3>
+                        <div class="qr-container mx-auto mb-6">
+                            <a href="imageQr/LeThiThuHuongQr.png" download="QR_Bride.png">
+                                <img src="imageQr/LeThiThuHuongQr.png" alt="QR Code Cô Dâu"
+                                    class="w-32 h-32 mx-auto mb-2 rounded-lg shadow-md">
+                            </a>
+                        </div>
+                        <div class="space-y-3 text-left p-4 rounded-lg font-cormorant"
+                            style="background-color: #F5F2FA; color: #6B4E9B;">
+                            <div><strong>Ngân hàng:</strong> Techcombank</div>
+                            <div><strong>Số tài khoản:</strong> 0987654321</div>
+                            <div><strong>Chủ tài khoản:</strong> LÊ THỊ THU HƯƠNG</div>
+                        </div>
+                        <button onclick="copyAccountInfo('0987654321', 'LÊ THỊ THU HƯƠNG')"
+                            class="btn-elegant px-6 py-3 rounded-full mt-4 font-montserrat">
+                            Copy Thông Tin
+                        </button>
                     </div>
-
-                    <div class="space-y-3 text-left bg-gray-50 p-4 rounded-lg">
-                        <div><strong>Ngân hàng:</strong> Techcombank</div>
-                        <div><strong>Số tài khoản:</strong> 0987654321</div>
-                        <div><strong>Chủ tài khoản:</strong> LÊ THỊ THU HƯƠNG</div>
-                    </div>
-
-                    <button onclick="copyAccountInfo('0987654321', 'LÊ THỊ THU HƯƠNG')"
-                        class="btn-elegant px-6 py-3 rounded-full mt-4">
-                        Copy Thông Tin
-                    </button>
                 </div>
             </div>
 
             <div class="text-center mt-12">
-                <p class="text-lg text-gray-600 font-playfair">
+                <p class="text-lg text-gray-600 font-cormorant" style="color: #6B4E9B; font-size: 1.125rem;">
                     Vợ chồng xin cảm ơn tất cả tình cảm của mọi người ạ ♥
                 </p>
             </div>
@@ -605,37 +1114,38 @@
 
     <div class="section-divider"></div>
 
-    <!-- Thank You Section -->
+    Thank You Section
     <section class="py-16">
         <div class="container mx-auto px-4 text-center">
             <div class="max-w-4xl mx-auto">
                 <div
-                    class="w-28 h-28 gradient-white rounded-full flex items-center justify-center mx-auto mb-12 floating premium-shadow">
+                    class="w-28 h-28 gradient-cream rounded-full flex items-center justify-center mx-auto mb-12 floating premium-shadow">
                     <span class="text-5xl">🙏</span>
                 </div>
-                <h2 class="text-5xl md:text-6xl font-dancing text-gradient mb-12 tracking-wide">
-                    Lời Cảm Ơn
+                <h2 class="text-5xl md:text-6xl font-cinzel text-gradient mb-12 tracking-wider">
+                    LỜI CẢM ƠN
                 </h2>
-                <p class="text-lg text-gray-600 leading-relaxed mb-8">
+                <p class="text-lg text-gray-600 leading-relaxed mb-8 font-cormorant"
+                    style="color: #6B4E9B; font-size: 1.125rem; line-height: 1.8;">
                     Vợ chồng em xin chân thành cảm ơn tất cả quý khách đã dành thời gian ghé thăm website và gửi những
                     lời chúc tốt đẹp. Sự quan tâm và yêu thương của mọi người chính là món quà ý nghĩa nhất mà vợ chồng
                     em nhận được.
                 </p>
-                <div class="text-2xl font-playfair text-gray-700 mb-4">
+                <div class="text-2xl font-cinzel text-gray-700 mb-4" style="color: #5A4080;">
                     "Tình yêu là hạnh phúc, hạnh phúc là được chia sẻ"
                 </div>
-                <div class="text-lg text-gray-600">
+                <div class="text-lg text-gray-600 font-cormorant" style="color: #6B4E9B;">
                     Trân trọng,<br>
-                    <span class="font-dancing text-2xl text-gradient">Lê Thanh Long & Lê Thị Thu Hương</span>
+                    <span class="font-italiana text-2xl text-gradient">Lê Thanh Long & Lê Thị Thu Hương</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gradient-to-r from-blue-50 to-white py-8">
+    Footer
+    <footer class="py-8" style="background: linear-gradient(to right, #EDE8F7, #F5F2FA);">
         <div class="container mx-auto px-4 text-center">
-            <div class="text-gray-500">
+            <div class="text-gray-500 font-montserrat" style="color: #8B7BC8;">
                 <p class="mb-2">© 2025 Lê Thanh Long & Lê Thị Thu Hương Wedding</p>
                 <p class="text-sm">Made with ❤️ for our special day</p>
             </div>
@@ -643,11 +1153,10 @@
     </footer>
 
     <script>
-        let musicPlaying = true; // Start with music playing
+        let musicPlaying = true;
         const music = document.getElementById('backgroundMusic');
         const musicIcon = document.getElementById('musicIcon');
 
-        // Function to toggle music playback
         function toggleMusic() {
             if (musicPlaying) {
                 music.pause();
@@ -664,7 +1173,6 @@
             }
         }
 
-        // Attempt to autoplay music on page load
         function attemptAutoplay() {
             music.load();
             music.play().then(() => {
@@ -675,13 +1183,11 @@
                 console.warn('Autoplay blocked:', error.message);
                 musicPlaying = false;
                 musicIcon.textContent = '🔇';
-                // Add event listeners for user interaction to start music
                 const startMusicOnInteraction = () => {
                     music.play().then(() => {
                         musicPlaying = true;
                         musicIcon.textContent = '🎵';
                         console.log('Music started after user interaction');
-                        // Remove event listeners after music starts
                         document.removeEventListener('click', startMusicOnInteraction);
                         document.removeEventListener('scroll', startMusicOnInteraction);
                         document.removeEventListener('keydown', startMusicOnInteraction);
@@ -697,12 +1203,10 @@
             });
         }
 
-        // Start autoplay when the page loads
         window.addEventListener('load', () => {
-            setTimeout(attemptAutoplay, 500); // Delay to ensure audio element is ready
+            setTimeout(attemptAutoplay, 500);
         });
 
-        // Handle audio source errors gracefully
         music.addEventListener('error', (e) => {
             console.error('Error loading audio:', e);
             musicPlaying = false;
@@ -724,56 +1228,6 @@
             });
         }
 
-        function downloadQR(type) {
-            // Create a simple QR code placeholder image
-            const canvas = document.createElement('canvas');
-            const ctx = canvas.getContext('2d');
-            canvas.width = 200;
-            canvas.height = 200;
-
-            // Fill background
-            ctx.fillStyle = '#ffffff';
-            ctx.fillRect(0, 0, 200, 200);
-
-            // Draw QR pattern (simplified)
-            ctx.fillStyle = '#000000';
-            for (let i = 0; i < 20; i++) {
-                for (let j = 0; j < 20; j++) {
-                    if (Math.random() > 0.5) {
-                        ctx.fillRect(i * 10, j * 10, 10, 10);
-                    }
-                }
-            }
-
-            // Add corner squares
-            ctx.fillRect(0, 0, 70, 70);
-            ctx.fillRect(130, 0, 70, 70);
-            ctx.fillRect(0, 130, 70, 70);
-
-            ctx.fillStyle = '#ffffff';
-            ctx.fillRect(10, 10, 50, 50);
-            ctx.fillRect(140, 10, 50, 50);
-            ctx.fillRect(10, 140, 50, 50);
-
-            ctx.fillStyle = '#000000';
-            ctx.fillRect(20, 20, 30, 30);
-            ctx.fillRect(150, 20, 30, 30);
-            ctx.fillRect(20, 150, 30, 30);
-
-            // Convert to blob and download
-            canvas.toBlob(function (blob) {
-                const url = URL.createObjectURL(blob);
-                const a = document.createElement('a');
-                a.href = url;
-                a.download = `QR_${type === 'groom' ? 'chu_re' : 'co_dau'}_Long_Huong.png`;
-                document.body.appendChild(a);
-                a.click();
-                document.body.removeChild(a);
-                URL.revokeObjectURL(url);
-                alert(`Đã tải QR Code ${type === 'groom' ? 'chú rể' : 'cô dâu'}!`);
-            });
-        }
-
         function loadMorePhotos() {
             const gallery = document.querySelector('.gallery-grid');
             for (let i = 7; i <= 12; i++) {
@@ -785,7 +1239,35 @@
             alert('Đã tải thêm ảnh!');
         }
 
-        // Smooth scrolling for navigation links
+        function toggleGiftContent() {
+            const giftContent = document.getElementById('giftContent');
+            giftContent.classList.toggle('open');
+        }
+
+        // Falling Flowers and Hearts
+        function createFallingElement() {
+            const elements = ['🌸', '🌹', '💖', '💕'];
+            const element = document.createElement('div');
+            element.className = 'falling-element';
+            element.innerText = elements[Math.floor(Math.random() * elements.length)];
+            element.style.left = `${Math.random() * 100}vw`;
+            element.style.animationDuration = `${Math.random() * 5 + 5}s`;
+            element.style.opacity = `${Math.random() * 0.5 + 0.3}`;
+            document.body.appendChild(element);
+
+            setTimeout(() => {
+                element.remove();
+            }, 10000);
+        }
+
+        function startFallingEffect() {
+            createFallingElement();
+            setInterval(createFallingElement, 500);
+        }
+
+        window.addEventListener('load', startFallingEffect);
+
+        // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -799,7 +1281,7 @@
             });
         });
 
-        // Add scroll animations
+        // Scroll animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -813,702 +1295,10 @@
             });
         }, observerOptions);
 
-        // Observe all sections
         document.querySelectorAll('section').forEach(section => {
             observer.observe(section);
         });
     </script>
-    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'98b69e2bd503dd89',t:'MTc1OTkzNjc4MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
 </body>
-<style>
-    body {
-        box-sizing: border-box;
-    }
-
-    .font-dancing {
-        font-family: 'Dancing Script', cursive;
-    }
-
-    .font-playfair {
-        font-family: 'Playfair Display', serif;
-    }
-
-    .font-inter {
-        font-family: 'Inter', sans-serif;
-    }
-
-    .gradient-blue {
-        background: linear-gradient(135deg, rgb(216, 226, 243) 0%, rgb(200, 215, 240) 25%, rgb(180, 200, 235) 50%, rgb(160, 185, 230) 75%, rgb(140, 170, 225) 100%);
-        box-shadow: 0 8px 32px rgba(140, 170, 225, 0.3);
-    }
-
-    .gradient-white {
-        background: linear-gradient(135deg, #ffffff 0%, rgb(250, 252, 255) 25%, rgb(245, 248, 252) 50%, rgb(240, 245, 250) 75%, rgb(235, 242, 250) 100%);
-        box-shadow: 0 8px 32px rgba(216, 226, 243, 0.3);
-    }
-
-    .text-gradient {
-        background: linear-gradient(135deg, rgb(100, 140, 200), rgb(120, 155, 210), rgb(140, 170, 225), rgb(160, 185, 230));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        filter: drop-shadow(2px 2px 4px rgba(140, 170, 225, 0.3));
-    }
-
-    .luxury-border {
-        border: 2px solid transparent;
-        background: linear-gradient(white, white) padding-box,
-            linear-gradient(135deg, rgb(216, 226, 243), rgb(180, 200, 235), rgb(140, 170, 225)) border-box;
-    }
-
-    .crystal-effect {
-        backdrop-filter: blur(20px);
-        background: rgba(255, 255, 255, 0.85);
-        border: 1px solid rgba(216, 226, 243, 0.3);
-        box-shadow: 0 25px 45px rgba(140, 170, 225, 0.1),
-            inset 0 1px 0 rgba(255, 255, 255, 0.9);
-    }
-
-    .premium-shadow {
-        box-shadow: 0 20px 60px rgba(140, 170, 225, 0.12),
-            0 8px 25px rgba(140, 170, 225, 0.08),
-            0 2px 8px rgba(140, 170, 225, 0.06);
-    }
-
-    .floating {
-        animation: floating 3s ease-in-out infinite;
-    }
-
-    @keyframes floating {
-
-        0%,
-        100% {
-            transform: translateY(0px);
-        }
-
-        50% {
-            transform: translateY(-10px);
-        }
-    }
-
-    .fade-in {
-        animation: fadeIn 1s ease-in;
-    }
-
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-            transform: translateY(30px);
-        }
-
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    .heart-beat {
-        animation: heartbeat 1.5s ease-in-out infinite;
-    }
-
-    @keyframes heartbeat {
-
-        0%,
-        100% {
-            transform: scale(1);
-        }
-
-        50% {
-            transform: scale(1.1);
-        }
-    }
-
-    .luxury-pattern {
-        background:
-            radial-gradient(circle at 25% 25%, rgba(216, 226, 243, 0.1) 0%, transparent 50%),
-            radial-gradient(circle at 75% 75%, rgba(140, 170, 225, 0.08) 0%, transparent 50%),
-            linear-gradient(135deg, #ffffff 0%, rgb(252, 253, 255) 25%, rgb(248, 250, 254) 50%, rgb(244, 247, 252) 75%, rgb(240, 244, 250) 100%);
-        position: relative;
-    }
-
-    .luxury-pattern::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d8e2f3' fill-opacity='0.03'%3E%3Cpath d='M60 60c0-16.569-13.431-30-30-30s-30 13.431-30 30 13.431 30 30 30 30-13.431 30-30zm0 0c0 16.569 13.431 30 30 30s30-13.431 30-30-13.431-30-30-30-30 13.431-30 30z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-        pointer-events: none;
-    }
-
-    .music-control {
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        z-index: 1000;
-        background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(248, 250, 254, 0.9));
-        backdrop-filter: blur(25px);
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        border: 2px solid rgba(216, 226, 243, 0.4);
-        box-shadow: 0 15px 35px rgba(140, 170, 225, 0.1),
-            0 5px 15px rgba(216, 226, 243, 0.2),
-            inset 0 1px 0 rgba(255, 255, 255, 0.8);
-        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .music-control:hover {
-        transform: scale(1.15) rotate(5deg);
-        box-shadow: 0 20px 45px rgba(140, 170, 225, 0.15),
-            0 8px 25px rgba(216, 226, 243, 0.3),
-            inset 0 1px 0 rgba(255, 255, 255, 0.9);
-        border-color: rgba(140, 170, 225, 0.6);
-    }
-
-    .section-divider {
-        background: linear-gradient(90deg, transparent, rgb(180, 200, 235), transparent);
-        height: 1px;
-        margin: 2rem 0;
-    }
-
-    .gallery-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1rem;
-    }
-
-    .gallery-item {
-        aspect-ratio: 1;
-        background: linear-gradient(135deg, rgb(240, 245, 250) 0%, rgb(230, 238, 248) 50%, rgb(216, 226, 243) 100%);
-        border-radius: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: rgb(80, 120, 180);
-        font-size: 1.1rem;
-        font-weight: 700;
-        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        cursor: pointer;
-        border: 2px solid rgba(216, 226, 243, 0.5);
-        box-shadow: 0 10px 30px rgba(140, 170, 225, 0.1),
-            0 4px 15px rgba(216, 226, 243, 0.2);
-        position: relative;
-        overflow: hidden;
-    }
-
-    .gallery-item::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-        transition: left 0.6s ease;
-    }
-
-    .gallery-item:hover {
-        transform: scale(1.05) rotate(1deg);
-        box-shadow: 0 15px 40px rgba(140, 170, 225, 0.15),
-            0 6px 20px rgba(216, 226, 243, 0.3);
-        border-color: rgba(140, 170, 225, 0.7);
-    }
-
-    .gallery-item:hover::before {
-        left: 100%;
-    }
-
-    .nav-link {
-        transition: all 0.3s ease;
-        position: relative;
-        font-size: 0.95rem;
-    }
-
-    .nav-link:hover {
-        color: rgb(120, 155, 210);
-    }
-
-    .nav-link::after {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 2px;
-        bottom: -5px;
-        left: 50%;
-        background: rgb(140, 170, 225);
-        transition: all 0.3s ease;
-    }
-
-    .nav-link:hover::after {
-        width: 100%;
-        left: 0;
-    }
-
-    .qr-container {
-        width: 150px;
-        height: 150px;
-        background: #ffffff;
-        border: 2px solid rgb(216, 226, 243);
-        border-radius: 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-size: 0.9rem;
-        color: rgb(100, 140, 200);
-        text-align: center;
-        box-shadow: 0 8px 25px rgba(216, 226, 243, 0.2);
-        cursor: pointer;
-        transition: all 0.3s ease;
-    }
-
-    .qr-container:hover {
-        transform: scale(1.05);
-        box-shadow: 0 12px 35px rgba(216, 226, 243, 0.3);
-    }
-
-    .btn-elegant {
-        background: linear-gradient(135deg, rgb(216, 226, 243), rgb(200, 215, 240));
-        color: rgb(80, 120, 180);
-        border: 1px solid rgba(140, 170, 225, 0.3);
-        transition: all 0.3s ease;
-        font-size: 0.95rem;
-    }
-
-    .btn-elegant:hover {
-        background: linear-gradient(135deg, rgb(200, 215, 240), rgb(180, 200, 235));
-        transform: translateY(-2px);
-        box-shadow: 0 8px 25px rgba(140, 170, 225, 0.2);
-    }
-
-    /* ===== MOBILE RESPONSIVE STYLES ===== */
-
-    /* Small phones (320px - 480px) */
-    @media (max-width: 480px) {
-        .music-control {
-            width: 45px;
-            height: 45px;
-            top: 15px;
-            right: 15px;
-            font-size: 1.2rem;
-        }
-
-        nav .container {
-            padding: 0.75rem 1rem;
-        }
-
-        nav .flex {
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            justify-content: center;
-        }
-
-        .nav-link {
-            font-size: 0.8rem;
-            padding: 0.25rem 0.5rem;
-        }
-
-        .section-divider {
-            margin: 1.5rem 0;
-        }
-
-        /* Hero Section */
-        #home {
-            padding-top: 8rem;
-            padding-bottom: 2rem;
-        }
-
-        #home h1 {
-            font-size: clamp(2rem, 10vw, 3rem) !important;
-            margin-bottom: 1.5rem;
-            line-height: 1.3;
-        }
-
-        #home .text-3xl {
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        #home .text-xl {
-            font-size: 1rem;
-            margin-bottom: 2rem;
-            padding: 0 1rem;
-        }
-
-        .gradient-blue {
-            padding: 0.75rem 2rem;
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-        }
-
-        #home .w-80 {
-            width: 200px;
-            height: 200px;
-            font-size: 4rem;
-            margin-bottom: 2rem;
-        }
-
-        #home p {
-            font-size: 0.95rem;
-            padding: 0 1rem;
-        }
-
-        /* Wedding Info Section */
-        #wedding-info {
-            padding: 2rem 0;
-        }
-
-        #wedding-info h2 {
-            font-size: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        #wedding-info .grid {
-            gap: 1.5rem;
-        }
-
-        #wedding-info .crystal-effect {
-            padding: 1.5rem;
-            border-radius: 1.5rem;
-        }
-
-        #wedding-info .w-20 {
-            width: 60px;
-            height: 60px;
-            margin-bottom: 1rem;
-        }
-
-        #wedding-info h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        #wedding-info .space-y-4 {
-            font-size: 0.9rem;
-        }
-
-        #wedding-info .flex {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 0.5rem;
-        }
-
-        .btn-elegant {
-            padding: 0.6rem 1.5rem;
-            font-size: 0.85rem;
-        }
-
-        /* Family Info */
-        #wedding-info .mt-16 {
-            margin-top: 2rem;
-        }
-
-        #wedding-info .mt-16 h3 {
-            font-size: 1.75rem;
-            margin-bottom: 1.5rem;
-        }
-
-        #wedding-info .mt-16 .crystal-effect {
-            padding: 1.5rem;
-        }
-
-        #wedding-info .mt-16 h4 {
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-        }
-
-        #wedding-info .space-y-3 {
-            font-size: 0.9rem;
-        }
-
-        /* Love Story Section */
-        #love-story {
-            padding: 2rem 0;
-        }
-
-        #love-story h2 {
-            font-size: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        #love-story .crystal-effect {
-            padding: 2rem 1.5rem;
-            border-radius: 1.5rem;
-        }
-
-        #love-story .w-24 {
-            width: 80px;
-            height: 80px;
-            margin-bottom: 1.5rem;
-            font-size: 2.5rem;
-        }
-
-        #love-story .prose {
-            font-size: 0.95rem;
-        }
-
-        #love-story .text-xl {
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
-        }
-
-        #love-story .text-lg {
-            font-size: 1rem;
-        }
-
-        #love-story .grid {
-            grid-template-columns: repeat(2, 1fr);
-            gap: 0.75rem;
-            margin-top: 2rem;
-        }
-
-        /* Gallery Section */
-        #gallery {
-            padding: 2rem 0;
-        }
-
-        #gallery h2 {
-            font-size: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .gallery-grid {
-            grid-template-columns: repeat(2, 1fr);
-            gap: 0.75rem;
-        }
-
-        .gallery-item {
-            border-radius: 12px;
-            font-size: 0.95rem;
-        }
-
-        /* Gift Section */
-        #gift {
-            padding: 2rem 0;
-        }
-
-        #gift h2 {
-            font-size: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        #gift .grid {
-            gap: 2rem;
-        }
-
-        #gift .crystal-effect {
-            padding: 1.5rem;
-            border-radius: 1.5rem;
-        }
-
-        #gift .w-20 {
-            width: 60px;
-            height: 60px;
-            margin-bottom: 1.5rem;
-            font-size: 2rem;
-        }
-
-        #gift h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .qr-container {
-            width: 130px;
-            height: 130px;
-        }
-
-        .qr-container img {
-            width: 110px !important;
-            height: 110px !important;
-        }
-
-        #gift .space-y-3 {
-            font-size: 0.85rem;
-            padding: 1rem;
-        }
-
-        #gift .text-lg {
-            font-size: 1rem;
-        }
-
-        /* Thank You Section */
-        section:last-of-type {
-            padding: 2rem 0;
-        }
-
-        section:last-of-type .w-28 {
-            width: 100px;
-            height: 100px;
-            font-size: 3rem;
-            margin-bottom: 2rem;
-        }
-
-        section:last-of-type h2 {
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-        }
-
-        section:last-of-type .text-lg {
-            font-size: 0.95rem;
-            padding: 0 1rem;
-        }
-
-        section:last-of-type .text-2xl {
-            font-size: 1.3rem;
-        }
-
-        section:last-of-type .font-dancing {
-            font-size: 1.5rem;
-        }
-
-        /* Footer */
-        footer {
-            padding: 1.5rem 0;
-            font-size: 0.85rem;
-        }
-    }
-
-    /* Medium phones (481px - 768px) */
-    @media (min-width: 481px) and (max-width: 768px) {
-        .music-control {
-            width: 55px;
-            height: 55px;
-            top: 20px;
-            right: 20px;
-        }
-
-        nav .flex {
-            gap: 1rem;
-        }
-
-        .nav-link {
-            font-size: 0.9rem;
-        }
-
-        #home h1 {
-            font-size: clamp(2.5rem, 8vw, 4rem) !important;
-        }
-
-        #home .text-3xl {
-            font-size: 1.75rem;
-        }
-
-        #home .text-xl {
-            font-size: 1.1rem;
-        }
-
-        #home .w-80 {
-            width: 250px;
-            height: 250px;
-            font-size: 5rem;
-        }
-
-        .gradient-blue {
-            padding: 1rem 2.5rem;
-            font-size: 1.3rem;
-        }
-
-        #wedding-info .crystal-effect,
-        #love-story .crystal-effect,
-        #gift .crystal-effect {
-            padding: 2rem;
-        }
-
-        .gallery-grid {
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
-        }
-
-        .qr-container {
-            width: 140px;
-            height: 140px;
-        }
-
-        .qr-container img {
-            width: 120px !important;
-            height: 120px !important;
-        }
-    }
-
-    /* Tablets and small laptops (769px - 1024px) */
-    @media (min-width: 769px) and (max-width: 1024px) {
-        .gallery-grid {
-            grid-template-columns: repeat(3, 1fr);
-        }
-
-        #wedding-info .grid,
-        #gift .grid {
-            gap: 2rem;
-        }
-    }
-
-    /* Landscape orientation adjustments */
-    @media (max-height: 600px) and (orientation: landscape) {
-        #home {
-            padding-top: 4rem;
-            padding-bottom: 1rem;
-        }
-
-        #home .w-80 {
-            width: 150px;
-            height: 150px;
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .floating {
-            animation: none;
-        }
-
-        section {
-            padding: 1.5rem 0;
-        }
-    }
-
-    /* Fix container padding on mobile */
-    @media (max-width: 768px) {
-        .container {
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
-
-        .max-w-6xl,
-        .max-w-5xl,
-        .max-w-4xl,
-        .max-w-3xl {
-            max-width: 100%;
-        }
-    }
-
-    /* Ensure text is readable on all devices */
-    @media (max-width: 768px) {
-        body {
-            font-size: 16px;
-            line-height: 1.6;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            word-wrap: break-word;
-            overflow-wrap: break-word;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-    }
-</style>
 
 </html>
