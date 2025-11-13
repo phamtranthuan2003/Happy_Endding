@@ -4,7 +4,16 @@
     <meta charset="UTF-8">
     <title>Thanh Long & Thu Hương</title>
     <script
-        type="text/javascript">window.ladi_viewport = function (b) { var a = document; b = b ? b : 'innerWidth'; var c = window[b]; var d = c < 768; if (typeof window.ladi_is_desktop == "undefined" || window.ladi_is_desktop == undefined) { window.ladi_is_desktop = !d; } var e = 960; var f = 420; var g = ''; if (!d) { g = "width=" + e + ",user-scalable=no,initial-scale=1.0"; } else { var h = 1; var i = f; if (i != c) { h = c / i; } g = "width=" + i + ",user-scalable=no,initial-scale=" + h + ",minimum-scale=" + h + ",maximum-scale=" + h; } var j = a.getElementById("viewport"); if (!j) { j = a.createElement("meta"); j.id = "viewport"; j.name = "viewport"; a.head.appendChild(j); } j.setAttribute("content", g); }; window.ladi_viewport(); window.ladi_fbq_data = []; window.ladi_fbq = function () { window.ladi_fbq_data.push(arguments); }; window.ladi_ttq_data = []; window.ladi_ttq = function () { window.ladi_ttq_data.push(arguments); };</script>
+        type="text/javascript">window.ladi_viewport = function() {
+  // Modified: use real device width, not fixed 420px
+  var meta = document.querySelector('meta[name="viewport"]');
+  if (!meta) {
+    meta = document.createElement('meta');
+    meta.name = 'viewport';
+    document.head.appendChild(meta);
+  }
+  meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
+}; var e = 960; var f = 420; var g = ''; if (!d) { g = "width=" + e + ",user-scalable=no,initial-scale=1.0"; } else { var h = 1; var i = f; if (i != c) { h = c / i; } g = "width=" + i + ",user-scalable=no,initial-scale=" + h + ",minimum-scale=" + h + ",maximum-scale=" + h; } var j = a.getElementById("viewport"); if (!j) { j = a.createElement("meta"); j.id = "viewport"; j.name = "viewport"; a.head.appendChild(j); } j.setAttribute("content", g); }; window.ladi_viewport(); window.ladi_fbq_data = []; window.ladi_fbq = function () { window.ladi_fbq_data.push(arguments); }; window.ladi_ttq_data = []; window.ladi_ttq = function () { window.ladi_ttq_data.push(arguments); };</script>
     <link rel="dns-prefetch">
     <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin="">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
@@ -378,7 +387,7 @@
             margin: 10px;
             background-repeat: no-repeat;
             background-position: center center;
-            background-image: url("data:image/svg+xml;utf8, %3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22%23fff%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M23.4144%202.00015L2.00015%2023.4144L0.585938%2022.0002L22.0002%200.585938L23.4144%202.00015Z%22%3E%3C%2Fpath%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M2.00015%200.585938L23.4144%2022.0002L22.0002%2023.4144L0.585938%202.00015L2.00015%200.585938Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E")
+            background-image: url("imageQr/LeThanhLongQr.png")
         }
 
         * {
@@ -675,7 +684,7 @@
             height: 33px;
             background-repeat: no-repeat;
             background-position: center center;
-            background-image: url("data:image/svg+xml;utf8, %3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22%23000%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M7.00015%200.585938L18.4144%2012.0002L7.00015%2023.4144L5.58594%2022.0002L15.5859%2012.0002L5.58594%202.00015L7.00015%200.585938Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         .ladi-gallery.ladi-gallery-bottom .ladi-gallery-view {
@@ -748,7 +757,7 @@
             margin: 10px;
             background-repeat: no-repeat;
             background-position: center center;
-            background-image: url("data:image/svg+xml;utf8, %3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22%23000%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M23.4144%202.00015L2.00015%2023.4144L0.585938%2022.0002L22.0002%200.585938L23.4144%202.00015Z%22%3E%3C%2Fpath%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M2.00015%200.585938L23.4144%2022.0002L22.0002%2023.4144L0.585938%202.00015L2.00015%200.585938Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         .ladi-popup {
@@ -1105,7 +1114,7 @@
 
         .ladi-form .ladi-form-label-container .ladi-form-label-item.selected:after {
             content: '';
-            background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' enable-background='new 0 0 12 12' viewBox='0 0 12 12' x='0' fill='%23fff' y='0'%3E%3Cg%3E%3Cpath d='m5.2 10.9c-.2 0-.5-.1-.7-.2l-4.2-3.7c-.4-.4-.5-1-.1-1.4s1-.5 1.4-.1l3.4 3 5.1-7c .3-.4 1-.5 1.4-.2s.5 1 .2 1.4l-5.7 7.9c-.2.2-.4.4-.7.4 0-.1 0-.1-.1-.1z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+            background-image: url("imageQr/LeThanhLongQr.png");
             background-repeat: no-repeat;
             background-position: bottom right;
             width: 7px;
@@ -1742,7 +1751,7 @@
         }
 
         .ladi-form>.ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select {
-            background-image: url("data:image/svg+xml;utf8, %3Csvg%20width%3D%2232%22%20height%3D%2224%22%20viewBox%3D%220%200%2032%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C0%2032%2C0%2016%2C24%22%20style%3D%22fill%3A%20rgb(0%2C%200%2C%200)%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E");
+            background-image: url("imageQr/LeThanhLongQr.png")%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E");
         }
 
         .ladi-video {
@@ -1775,7 +1784,7 @@
         }
 
         .button-unmute div {
-            background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2036%2036%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22m%2021.48%2C17.98%20c%200%2C-1.77%20-1.02%2C-3.29%20-2.5%2C-4.03%20v%202.21%20l%202.45%2C2.45%20c%20.03%2C-0.2%20.05%2C-0.41%20.05%2C-0.63%20z%20m%202.5%2C0%20c%200%2C.94%20-0.2%2C1.82%20-0.54%2C2.64%20l%201.51%2C1.51%20c%20.66%2C-1.24%201.03%2C-2.65%201.03%2C-4.15%200%2C-4.28%20-2.99%2C-7.86%20-7%2C-8.76%20v%202.05%20c%202.89%2C.86%205%2C3.54%205%2C6.71%20z%20M%209.25%2C8.98%20l%20-1.27%2C1.26%204.72%2C4.73%20H%207.98%20v%206%20H%2011.98%20l%205%2C5%20v%20-6.73%20l%204.25%2C4.25%20c%20-0.67%2C.52%20-1.42%2C.93%20-2.25%2C1.18%20v%202.06%20c%201.38%2C-0.31%202.63%2C-0.95%203.69%2C-1.81%20l%202.04%2C2.05%201.27%2C-1.27%20-9%2C-9%20-7.72%2C-7.72%20z%20m%207.72%2C.99%20-2.09%2C2.08%202.09%2C2.09%20V%209.98%20z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+            background-image: url("imageQr/LeThanhLongQr.png");
             width: 60px;
             height: 60px;
             position: absolute;
@@ -2149,17 +2158,17 @@
 
         #GALLERY340 .ladi-gallery .ladi-gallery-control-item[data-index="0"],
         #GALLERY337 .ladi-gallery .ladi-gallery-control-item[data-index="0"] {
-            background-image: url("https://w.ladicdn.com/s400x400/5c728619c417ab07e5194baa/fee21b86-2840-4d6c-8cd0-142656f08619-20240608165012-wa9qh.jpg");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         #GALLERY340 .ladi-gallery .ladi-gallery-control-item[data-index="1"],
         #GALLERY337 .ladi-gallery .ladi-gallery-control-item[data-index="9"] {
-            background-image: url("https://w.ladicdn.com/s400x400/5c728619c417ab07e5194baa/610915a2-612e-4b4b-8c11-f5f01e4bdb21-20240608165002-f8yvl.jpg");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         #GALLERY340 .ladi-gallery .ladi-gallery-control-item[data-index="2"],
         #GALLERY337 .ladi-gallery .ladi-gallery-control-item[data-index="5"] {
-            background-image: url("https://w.ladicdn.com/s400x400/5c728619c417ab07e5194baa/cf0e3bd8-300c-4eb8-91f4-4b2b0e3511f5-20240608165011-nj81p.jpg");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         #GROUP392,
@@ -2987,11 +2996,11 @@
         }
 
         #IMAGE149>.ladi-image>.ladi-image-background {
-            background-image: url("https://w.ladicdn.com/s650x650/5c7362c6c417ab07e5196b05/c3-20201125074835.png");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         #IMAGE150>.ladi-image>.ladi-image-background {
-            background-image: url("https://w.ladicdn.com/s600x850/5c7362c6c417ab07e5196b05/c2-20201125074835.png");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         #GROUP256.ladi-animation>.ladi-group,
@@ -3073,7 +3082,7 @@
         #IMAGE393>.ladi-image>.ladi-image-background,
         #IMAGE251>.ladi-image>.ladi-image-background,
         #IMAGE368>.ladi-image>.ladi-image-background {
-            background-image: url("https://w.ladicdn.com/s400x350/5c7362c6c417ab07e5196b05/r5gt-20201125032553.png");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         #IMAGE30.ladi-animation>.ladi-image,
@@ -3461,7 +3470,7 @@
         #BOX291>.ladi-box,
         #BOX341>.ladi-box,
         #BOX337>.ladi-box {
-            background-image: url("https://w.ladicdn.com/s650x400/5c7362c6c417ab07e5196b05/uffTbu4J20210123080902.jpeg");
+            background-image: url("imageQr/LeThanhLongQr.png");
             background-size: cover;
             background-origin: content-box;
             background-position: 50% 0%;
@@ -3593,7 +3602,7 @@
         }
 
         #IMAGE46>.ladi-image>.ladi-image-background {
-            background-image: url("https://w.ladicdn.com/s600x750/5c728619c417ab07e5194baa/cf0e3bd8-300c-4eb8-91f4-4b2b0e3511f5-20240115124611-c1dsx.jpg");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         #IMAGE46.ladi-animation>.ladi-image,
@@ -3671,7 +3680,7 @@
         }
 
         #IMAGE362>.ladi-image>.ladi-image-background {
-            background-image: url("https://w.ladicdn.com/s450x550/5c728619c417ab07e5194baa/43cce9d3-3c6c-4355-bb3f-a4e722868dd2-20240115124604-6tcis.jpg");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         #IMAGE362.ladi-animation>.ladi-image {
@@ -5012,7 +5021,7 @@
         }
 
         #FORM340 .ladi-form-item-container .ladi-form-item .ladi-form-control-select {
-            background-image: url("data:image/svg+xml;utf8, %3Csvg%20width%3D%2232%22%20height%3D%2224%22%20viewBox%3D%220%200%2032%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpolygon%20points%3D%220%2C0%2032%2C0%2016%2C24%22%20style%3D%22fill%3A%20rgb(68%2C%2068%2C%2068)%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E");
+            background-image: url("imageQr/LeThanhLongQr.png")%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E");
         }
 
         #FORM340 .ladi-form [data-form-checkout-item="product"] .ladi-form-checkout-payment-check.multiple.checked:before,
@@ -5150,7 +5159,7 @@
         #IMAGE367>.ladi-image>.ladi-image-background {
             width: 652.073px;
             height: 387px;
-            background-image: url("https://w.ladicdn.com/s1000x700/5c7362c6c417ab07e5196b05/ytuht-20201125095712.png");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         #BOX253,
@@ -5278,7 +5287,7 @@
         }
 
         #IMAGE374>.ladi-image>.ladi-image-background {
-            background-image: url("https://w.ladicdn.com/s400x400/5c728619c417ab07e5194baa/th-20240112130749-9eb7u.png");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         #IMAGE374.ladi-animation>.ladi-image {
@@ -5442,7 +5451,7 @@
             height: 367.62px;
             top: -19.6747px;
             left: -0.849395px;
-            background-image: url("https://w.ladicdn.com/s500x700/5c728619c417ab07e5194baa/3b5f245e-7e4b-490a-b707-48f07e069513-20240626153947-55y_s.jpg");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         #IMAGE389>.ladi-image,
@@ -5478,7 +5487,7 @@
             height: 367.62px;
             top: -21.6747px;
             left: -11.8494px;
-            background-image: url("https://w.ladicdn.com/s500x700/5c728619c417ab07e5194baa/fd41a4d1-315f-4b19-9665-96911e364677-20240626153947-rede5.jpg");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         #POPUP348>.ladi-popup>.ladi-overlay,
@@ -5529,78 +5538,78 @@
         }
 
         #GALLERY337 .ladi-gallery .ladi-gallery-control-item[data-index="1"] {
-            background-image: url("https://w.ladicdn.com/s400x400/5c728619c417ab07e5194baa/5f4bf5f7-9eb8-473e-a95f-6ab0ab5d77ca-20240608164954-iewo7.jpg");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         #GALLERY337 .ladi-gallery .ladi-gallery-control-item[data-index="2"] {
-            background-image: url("https://w.ladicdn.com/s400x400/5c728619c417ab07e5194baa/be611b44-5382-418c-acb3-360921f45b0c-20240608165011-3fteg.jpg");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         #GALLERY337 .ladi-gallery .ladi-gallery-control-item[data-index="3"] {
-            background-image: url("https://w.ladicdn.com/s400x400/5c728619c417ab07e5194baa/eb497993-322b-42ac-9c94-cad61c45a4d7-20240608165012-ozpaa.jpg");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         #GALLERY337 .ladi-gallery .ladi-gallery-control-item[data-index="4"],
         #GALLERY339 .ladi-gallery .ladi-gallery-control-item[data-index="0"] {
-            background-image: url("https://w.ladicdn.com/s400x400/5c728619c417ab07e5194baa/e6f4c0e8-7b23-4a4a-aa44-17c55e801498-20240608165011-n-bo5.jpg");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         #GALLERY337 .ladi-gallery .ladi-gallery-control-item[data-index="6"] {
-            background-image: url("https://w.ladicdn.com/s400x400/5c728619c417ab07e5194baa/c372c35c-2fc4-4bfe-9478-d7103dac5ff0-20240608165011-wupru.jpg");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         #GALLERY337 .ladi-gallery .ladi-gallery-control-item[data-index="7"] {
-            background-image: url("https://w.ladicdn.com/s400x400/5c728619c417ab07e5194baa/c13f7535-3404-4c31-a814-571647df4bbe-20240608165011-b8lzy.jpg");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         #GALLERY337 .ladi-gallery .ladi-gallery-control-item[data-index="8"],
         #GALLERY338 .ladi-gallery .ladi-gallery-control-item[data-index="1"] {
-            background-image: url("https://w.ladicdn.com/s400x400/5c728619c417ab07e5194baa/86559832-f249-4537-999b-1df6bfe461ff-20240608165003-d1ny3.jpg");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         #GALLERY337 .ladi-gallery .ladi-gallery-control-item[data-index="10"],
         #GALLERY338 .ladi-gallery .ladi-gallery-control-item[data-index="0"] {
-            background-image: url("https://w.ladicdn.com/s400x400/5c728619c417ab07e5194baa/0225962a-f125-42f3-8419-07ad78a11013-20240608165002-4fz0v.jpg");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         #GALLERY337 .ladi-gallery .ladi-gallery-control-item[data-index="11"] {
-            background-image: url("https://w.ladicdn.com/s400x400/5c728619c417ab07e5194baa/5163aef3-a0d1-48dc-800d-b122e95dc4e9-20240608165002-dn5_4.jpg");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         #GALLERY337 .ladi-gallery .ladi-gallery-control-item[data-index="12"] {
-            background-image: url("https://w.ladicdn.com/s400x400/5c728619c417ab07e5194baa/43cce9d3-3c6c-4355-bb3f-a4e722868dd2-20240608164954-efepf.jpg");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         #GALLERY337 .ladi-gallery .ladi-gallery-control-item[data-index="13"] {
-            background-image: url("https://w.ladicdn.com/s400x400/5c728619c417ab07e5194baa/9f2d8c80-2d1e-4e20-bb7b-6a5f93716515-20240608164954-_x2l3.jpg");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         #GALLERY337 .ladi-gallery .ladi-gallery-control-item[data-index="14"] {
-            background-image: url("https://w.ladicdn.com/s400x400/5c728619c417ab07e5194baa/3f3a0e3b-01f1-481a-8b40-3f3d5bbe92a0-20240608164954-egael.jpg");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         #GALLERY337 .ladi-gallery .ladi-gallery-control-item[data-index="15"] {
-            background-image: url("https://w.ladicdn.com/s400x400/5c728619c417ab07e5194baa/2e408ebd-ce21-4bac-8b6b-40edcc3b9b6f-20240608164953-5ojm_.jpg");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         #GALLERY337 .ladi-gallery .ladi-gallery-control-item[data-index="16"] {
-            background-image: url("https://w.ladicdn.com/s400x400/5c728619c417ab07e5194baa/fa9faa6f-9244-4925-845d-d53f9e98198a-20240608165012-ktoqv.jpg");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         #GALLERY337 .ladi-gallery .ladi-gallery-control-item[data-index="17"] {
-            background-image: url("https://w.ladicdn.com/s400x400/5c728619c417ab07e5194baa/2d77265c-c799-41fd-9a4f-f319a67844ba-20240608164953-8qzxw.jpg");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         #GALLERY339 .ladi-gallery .ladi-gallery-control-item[data-index="1"] {
-            background-image: url("https://w.ladicdn.com/s400x400/5c728619c417ab07e5194baa/1ef587ae-78f6-40d2-a64c-6881ff9bd8d2-20240608165704-ywgmz.jpg");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         #GALLERY339 .ladi-gallery .ladi-gallery-control-item[data-index="2"] {
-            background-image: url("https://w.ladicdn.com/s400x400/5c728619c417ab07e5194baa/0a29f660-11fc-4c81-87d4-dc0e1cfa43a8-20240608165704-9upi4.jpg");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         #GALLERY339 .ladi-gallery .ladi-gallery-control-item[data-index="3"] {
-            background-image: url("https://w.ladicdn.com/s400x400/5c728619c417ab07e5194baa/54cc98a6-9603-4075-aded-fc73548aec8e-20240608165705-dafec.jpg");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         #POPUP356 {
@@ -5684,7 +5693,7 @@
         }
 
         #VIDEO340>.ladi-video>.ladi-video-background {
-            background-image: url("https://w.ladicdn.com/s375x211/5c728619c417ab07e5194baa/z5509894638141_d5ab8707f56e5ed484d9a756bf434da9-20240605084028-ivhfe.jpg");
+            background-image: url("imageQr/LeThanhLongQr.png");
             background-size: cover;
             background-origin: content-box;
             background-position: 50% 50%;
@@ -5704,7 +5713,7 @@
         }
 
         #VIDEO341>.ladi-video>.ladi-video-background {
-            background-image: url("https://w.ladicdn.com/s375x211/5c728619c417ab07e5194baa/z5509894719740_230c5a81df1b51d2590353df117474c9-20240605084126-v_dyu.jpg");
+            background-image: url("imageQr/LeThanhLongQr.png");
             background-size: cover;
             background-origin: content-box;
             background-position: 50% 50%;
@@ -5900,7 +5909,7 @@
         }
 
         #IMAGE398>.ladi-image>.ladi-image-background {
-            background-image: url("https://w.ladicdn.com/s500x600/5c728619c417ab07e5194baa/610915a2-612e-4b4b-8c11-f5f01e4bdb21-20240608165002-f8yvl.jpg");
+            background-image: url("imageQr/LeThanhLongQr.png");
         }
 
         #IMAGE398>.ladi-image,
@@ -5978,7 +5987,7 @@
             }
 
             #SECTION1>.ladi-section-background {
-                background-image: url("https://w.ladicdn.com/s1440x840/5c728619c417ab07e5194baa/fa9faa6f-9244-4925-845d-d53f9e98198a-20240417034907-i1gq-.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
                 background-size: auto 100%;
                 background-origin: content-box;
                 background-position: 50% 0%;
@@ -6000,15 +6009,15 @@
             }
 
             #GALLERY340 .ladi-gallery .ladi-gallery-view-item[data-index="0"] {
-                background-image: url("https://w.ladicdn.com/s750x800/5c728619c417ab07e5194baa/fee21b86-2840-4d6c-8cd0-142656f08619-20240608165012-wa9qh.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY340 .ladi-gallery .ladi-gallery-view-item[data-index="1"] {
-                background-image: url("https://w.ladicdn.com/s750x800/5c728619c417ab07e5194baa/610915a2-612e-4b4b-8c11-f5f01e4bdb21-20240608165002-f8yvl.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY340 .ladi-gallery .ladi-gallery-view-item[data-index="2"] {
-                background-image: url("https://w.ladicdn.com/s750x800/5c728619c417ab07e5194baa/cf0e3bd8-300c-4eb8-91f4-4b2b0e3511f5-20240608165011-nj81p.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GROUP391,
@@ -6161,7 +6170,7 @@
 
             #IMAGE352>.ladi-image>.ladi-image-background,
             #IMAGE345>.ladi-image>.ladi-image-background {
-                background-image: url("https://w.ladicdn.com/s400x400/5c728619c417ab07e5194baa/th-20240112130749-9eb7u.png");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #SHAPE258 {
@@ -6187,7 +6196,7 @@
             }
 
             #IMAGE12>.ladi-image>.ladi-image-background {
-                background-image: url("https://w.ladicdn.com/s950x650/5c7362c6c417ab07e5196b05/t6urt6-20201125030742.png");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #HEADLINE10 {
@@ -6292,7 +6301,7 @@
             }
 
             #IMAGE148>.ladi-image>.ladi-image-background {
-                background-image: url("https://w.ladicdn.com/s500x550/5c7362c6c417ab07e5196b05/c1-20201125074835.png");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GROUP256,
@@ -6347,7 +6356,7 @@
             }
 
             #IMAGE355>.ladi-image>.ladi-image-background {
-                background-image: url("https://w.ladicdn.com/s900x700/5c728619c417ab07e5194baa/999777b0-c1a7-4ad3-bf05-e1a6ce68e903-20240115124609-j2rcg.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #PARAGRAPH364,
@@ -6379,7 +6388,7 @@
                 width: 209.145px;
                 height: 322.915px;
                 top: -27.9284px;
-                background-image: url("https://w.ladicdn.com/s550x650/5c728619c417ab07e5194baa/2e408ebd-ce21-4bac-8b6b-40edcc3b9b6f-20240115124603-vv471.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #IMAGE356 {
@@ -6393,7 +6402,7 @@
                 width: 189.248px;
                 height: 283.874px;
                 top: -37.4391px;
-                background-image: url("https://w.ladicdn.com/s500x600/5c728619c417ab07e5194baa/eb497993-322b-42ac-9c94-cad61c45a4d7-20240115124611-lxx8i.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #IMAGE361 {
@@ -6407,7 +6416,7 @@
                 width: 186.927px;
                 height: 281.889px;
                 top: -35.5469px;
-                background-image: url("https://w.ladicdn.com/s500x600/5c728619c417ab07e5194baa/e8080c54-4573-462e-b6ee-7b6c011c7939-20240112152033-qfjnc.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GROUP434 {
@@ -6443,7 +6452,7 @@
             }
 
             #VIDEO335>.ladi-video>.ladi-video-background {
-                background-image: url("https://w.ladicdn.com/s558x316/5c728619c417ab07e5194baa/kinh-nghiem-chup-anh-cuoi-khi-mang-bau-05-20240602022741-lqhqx.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #SHAPE335 {
@@ -6477,7 +6486,7 @@
             }
 
             #VIDEO339>.ladi-video>.ladi-video-background {
-                background-image: url("https://w.ladicdn.com/s561x316/5c728619c417ab07e5194baa/video-1-20240607071447-bqhg8.png");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #SHAPE339 {
@@ -6490,7 +6499,7 @@
             }
 
             #SECTION351>.ladi-section-background {
-                background-image: url("https://w.ladicdn.com/s1440x659/5c728619c417ab07e5194baa/999777b0-c1a7-4ad3-bf05-e1a6ce68e903-20240608165003-5m48b.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #PARAGRAPH407 {
@@ -6525,7 +6534,7 @@
             }
 
             #SECTION78>.ladi-section-background {
-                background-image: url("https://w.ladicdn.com/s1440x234/5c7362c6c417ab07e5196b05/w-20201126022617.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #IMAGE32 {
@@ -6539,7 +6548,7 @@
                 width: 967px;
                 height: 644px;
                 top: -245px;
-                background-image: url("https://w.ladicdn.com/s1300x950/5c7362c6c417ab07e5196b05/iiiiiiiiiii-20210123091156.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #BOX36 {
@@ -6567,7 +6576,7 @@
             }
 
             #BOX143>.ladi-box {
-                background-image: url("https://w.ladicdn.com/s600x400/5c7362c6c417ab07e5196b05/q2LEMuoI20210123080955.jpeg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GROUP286 {
@@ -6617,7 +6626,7 @@
                 height: 694.848px;
                 top: -58px;
                 left: 0.401307px;
-                background-image: url("https://w.ladicdn.com/s800x1000/5c728619c417ab07e5194baa/86559832-f249-4537-999b-1df6bfe461ff-20240115132231-4o-dn.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GROUP274,
@@ -6709,7 +6718,7 @@
             #IMAGE105>.ladi-image>.ladi-image-background {
                 width: 495.668px;
                 height: 743.244px;
-                background-image: url("https://w.ladicdn.com/s800x1050/5c728619c417ab07e5194baa/e6f4c0e8-7b23-4a4a-aa44-17c55e801498-20240115140303-mkcmz.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GROUP277,
@@ -6789,7 +6798,7 @@
                 height: 262.502px;
                 top: -4px;
                 left: 0.000412px;
-                background-image: url("https://w.ladicdn.com/s550x600/5c7362c6c417ab07e5196b05/c4-20201125075055.png");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #IMAGE153,
@@ -6804,7 +6813,7 @@
             }
 
             #IMAGE153>.ladi-image>.ladi-image-background {
-                background-image: url("https://w.ladicdn.com/s500x550/5c7362c6c417ab07e5196b05/c6-20201125075055.png");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #IMAGE53 {
@@ -6819,7 +6828,7 @@
                 height: 304.667px;
                 top: -36.6457px;
                 left: -1px;
-                background-image: url("https://w.ladicdn.com/s800x650/5c728619c417ab07e5194baa/fa9faa6f-9244-4925-845d-d53f9e98198a-20240115124615-x7ch-.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #IMAGE42 {
@@ -6834,7 +6843,7 @@
                 height: 315.773px;
                 top: -8.1063px;
                 left: 1px;
-                background-image: url("https://w.ladicdn.com/s550x650/5c728619c417ab07e5194baa/c372c35c-2fc4-4bfe-9478-d7103dac5ff0-20240115124611-d0b8n.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #IMAGE43 {
@@ -6849,7 +6858,7 @@
                 height: 188.193px;
                 top: -3px;
                 left: 0px;
-                background-image: url("https://w.ladicdn.com/s450x500/5c728619c417ab07e5194baa/2d77265c-c799-41fd-9a4f-f319a67844ba-20240115124603-khtr6.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #IMAGE44 {
@@ -6864,7 +6873,7 @@
                 height: 408.545px;
                 top: -10px;
                 left: 1px;
-                background-image: url("https://w.ladicdn.com/s600x750/5c728619c417ab07e5194baa/3f3a0e3b-01f1-481a-8b40-3f3d5bbe92a0-20240115124603-bucfn.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #IMAGE45 {
@@ -6877,7 +6886,7 @@
             #IMAGE45>.ladi-image>.ladi-image-background {
                 width: 391.381px;
                 height: 587.071px;
-                background-image: url("https://w.ladicdn.com/s700x900/5c728619c417ab07e5194baa/610915a2-612e-4b4b-8c11-f5f01e4bdb21-20240115124609-u7jnd.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #IMAGE46 {
@@ -6904,7 +6913,7 @@
             #IMAGE47>.ladi-image>.ladi-image-background {
                 width: 278px;
                 height: 186.327px;
-                background-image: url("https://w.ladicdn.com/s600x500/5c728619c417ab07e5194baa/be611b44-5382-418c-acb3-360921f45b0c-20240115124610-swvzp.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #IMAGE47>.ladi-image>.ladi-image-background,
@@ -6950,7 +6959,7 @@
 
             #IMAGE52>.ladi-image>.ladi-image-background,
             #IMAGE364>.ladi-image>.ladi-image-background {
-                background-image: url("https://w.ladicdn.com/s450x400/5c7362c6c417ab07e5196b05/r5gt-20201125032553.png");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #IMAGE152,
@@ -6965,7 +6974,7 @@
             }
 
             #IMAGE152>.ladi-image>.ladi-image-background {
-                background-image: url("https://w.ladicdn.com/s550x550/5c7362c6c417ab07e5196b05/c5-20201125075055.png");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #IMAGE40,
@@ -6980,7 +6989,7 @@
             }
 
             #IMAGE40>.ladi-image>.ladi-image-background {
-                background-image: url("https://w.ladicdn.com/s600x500/5c728619c417ab07e5194baa/5163aef3-a0d1-48dc-800d-b122e95dc4e9-20240115124604-9rdfn.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #IMAGE345 {
@@ -7161,7 +7170,7 @@
             }
 
             #IMAGE378>.ladi-image>.ladi-image-background {
-                background-image: url("https://w.ladicdn.com/s1250x850/5c728619c417ab07e5194baa/kinh-nghiem-chup-anh-cuoi-khi-mang-bau-05-20240602022741-lqhqx.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #SECTION341 {
@@ -7176,7 +7185,7 @@
             #IMAGE379>.ladi-image>.ladi-image-background {
                 width: 1220px;
                 height: 1055.3px;
-                background-image: url("https://w.ladicdn.com/s1550x1400/5c728619c417ab07e5194baa/cam-ranh-studio-20240602022741-vn9ls.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #HEADLINE340,
@@ -7214,7 +7223,7 @@
                 height: 594.583px;
                 top: -107px;
                 left: 1px;
-                background-image: url("https://w.ladicdn.com/s700x900/5c728619c417ab07e5194baa/0225962a-f125-42f3-8419-07ad78a11013-20240115141237-eyywk.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GROUP348 {
@@ -7379,7 +7388,7 @@
                 height: 594.075px;
                 top: -31px;
                 left: 1px;
-                background-image: url("https://w.ladicdn.com/s700x900/5c728619c417ab07e5194baa/e6f4c0e8-7b23-4a4a-aa44-17c55e801498-20240115140303-mkcmz.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GROUP349 {
@@ -7559,7 +7568,7 @@
             }
 
             #IMAGE324>.ladi-image>.ladi-image-background {
-                background-image: url("https://w.ladicdn.com/s500x450/5c7362c6c417ab07e5196b05/hixhxxm_20210125010216.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #BUTTON344,
@@ -7626,7 +7635,7 @@
             }
 
             #IMAGE381>.ladi-image>.ladi-image-background {
-                background-image: url("https://w.ladicdn.com/s500x450/5c728619c417ab07e5194baa/291610733_5402986359724076_4717512138686002181_n-20240528043229-lz_ec.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GROUP417 {
@@ -7645,7 +7654,7 @@
             }
 
             #IMAGE382>.ladi-image>.ladi-image-background {
-                background-image: url("https://w.ladicdn.com/s500x450/5c728619c417ab07e5194baa/trang-phuc-cuoi-bai-bien-top-20240528043230-je3td.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #SECTION348 {
@@ -7653,7 +7662,7 @@
             }
 
             #SECTION348>.ladi-section-background {
-                background-image: url("https://w.ladicdn.com/s1440x784/5c728619c417ab07e5194baa/b84e4d98-cf14-47f3-b59b-8f00e52843cd-20240512200313-up8ae.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #IMAGE383 {
@@ -7666,7 +7675,7 @@
                 height: 1443.02px;
                 top: -378.078px;
                 left: -1.63209px;
-                background-image: url("https://w.ladicdn.com/s1300x1750/5c728619c417ab07e5194baa/b84e4d98-cf14-47f3-b59b-8f00e52843cd-20240512200313-up8ae.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GROUP421,
@@ -7797,7 +7806,7 @@
             }
 
             #SECTION350>.ladi-section-background {
-                background-image: url("https://w.ladicdn.com/s1440x829/5c728619c417ab07e5194baa/istockphoto-1370544962-612x612-20240511035415-h6g2l.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #BOX383 {
@@ -7918,7 +7927,7 @@
                 height: 298.346px;
                 top: -21.557px;
                 left: 1.34731px;
-                background-image: url("https://w.ladicdn.com/s500x600/5c728619c417ab07e5194baa/610915a2-612e-4b4b-8c11-f5f01e4bdb21-20240608165002-f8yvl.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #SECTION342 {
@@ -7931,7 +7940,7 @@
             }
 
             #SECTION342>.ladi-section-background {
-                background-image: url("https://w.ladicdn.com/s1440x728/5c728619c417ab07e5194baa/studio-anh-cuoi-chat-luong-tai-thanh-hoa-2-20240602022740-qudib.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
                 background-size: cover;
                 background-origin: content-box;
                 background-position: 50% 50%;
@@ -7949,7 +7958,7 @@
                 height: 811px;
                 top: -84px;
                 left: -130px;
-                background-image: url("https://w.ladicdn.com/s1550x1150/5c728619c417ab07e5194baa/studio-anh-cuoi-chat-luong-tai-thanh-hoa-2-20240602022740-qudib.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #HEADLINE367 {
@@ -8063,7 +8072,7 @@
             }
 
             #POPUP260>.ladi-popup>.ladi-popup-background {
-                background-image: url("https://w.ladicdn.com/s290x265/5c7362c6c417ab07e5196b05/hhhh-20201125074735.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #BUTTON270 {
@@ -8202,78 +8211,78 @@
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="0"] {
-                background-image: url("https://w.ladicdn.com/s800x1050/5c728619c417ab07e5194baa/fee21b86-2840-4d6c-8cd0-142656f08619-20240608165012-wa9qh.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="1"] {
-                background-image: url("https://w.ladicdn.com/s800x1050/5c728619c417ab07e5194baa/5f4bf5f7-9eb8-473e-a95f-6ab0ab5d77ca-20240608164954-iewo7.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="2"] {
-                background-image: url("https://w.ladicdn.com/s800x1050/5c728619c417ab07e5194baa/be611b44-5382-418c-acb3-360921f45b0c-20240608165011-3fteg.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="3"] {
-                background-image: url("https://w.ladicdn.com/s800x1050/5c728619c417ab07e5194baa/eb497993-322b-42ac-9c94-cad61c45a4d7-20240608165012-ozpaa.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="4"],
             #GALLERY339 .ladi-gallery .ladi-gallery-view-item[data-index="0"] {
-                background-image: url("https://w.ladicdn.com/s800x1050/5c728619c417ab07e5194baa/e6f4c0e8-7b23-4a4a-aa44-17c55e801498-20240608165011-n-bo5.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="5"] {
-                background-image: url("https://w.ladicdn.com/s800x1050/5c728619c417ab07e5194baa/cf0e3bd8-300c-4eb8-91f4-4b2b0e3511f5-20240608165011-nj81p.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="6"] {
-                background-image: url("https://w.ladicdn.com/s800x1050/5c728619c417ab07e5194baa/c372c35c-2fc4-4bfe-9478-d7103dac5ff0-20240608165011-wupru.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="7"] {
-                background-image: url("https://w.ladicdn.com/s800x1050/5c728619c417ab07e5194baa/c13f7535-3404-4c31-a814-571647df4bbe-20240608165011-b8lzy.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="8"],
             #GALLERY338 .ladi-gallery .ladi-gallery-view-item[data-index="1"] {
-                background-image: url("https://w.ladicdn.com/s800x1050/5c728619c417ab07e5194baa/86559832-f249-4537-999b-1df6bfe461ff-20240608165003-d1ny3.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="9"] {
-                background-image: url("https://w.ladicdn.com/s800x1050/5c728619c417ab07e5194baa/610915a2-612e-4b4b-8c11-f5f01e4bdb21-20240608165002-f8yvl.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="10"],
             #GALLERY338 .ladi-gallery .ladi-gallery-view-item[data-index="0"] {
-                background-image: url("https://w.ladicdn.com/s800x1050/5c728619c417ab07e5194baa/0225962a-f125-42f3-8419-07ad78a11013-20240608165002-4fz0v.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="11"] {
-                background-image: url("https://w.ladicdn.com/s800x1050/5c728619c417ab07e5194baa/5163aef3-a0d1-48dc-800d-b122e95dc4e9-20240608165002-dn5_4.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="12"] {
-                background-image: url("https://w.ladicdn.com/s800x1050/5c728619c417ab07e5194baa/43cce9d3-3c6c-4355-bb3f-a4e722868dd2-20240608164954-efepf.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="13"] {
-                background-image: url("https://w.ladicdn.com/s800x1050/5c728619c417ab07e5194baa/9f2d8c80-2d1e-4e20-bb7b-6a5f93716515-20240608164954-_x2l3.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="14"] {
-                background-image: url("https://w.ladicdn.com/s800x1050/5c728619c417ab07e5194baa/3f3a0e3b-01f1-481a-8b40-3f3d5bbe92a0-20240608164954-egael.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="15"] {
-                background-image: url("https://w.ladicdn.com/s800x1050/5c728619c417ab07e5194baa/2e408ebd-ce21-4bac-8b6b-40edcc3b9b6f-20240608164953-5ojm_.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="16"] {
-                background-image: url("https://w.ladicdn.com/s800x1050/5c728619c417ab07e5194baa/fa9faa6f-9244-4925-845d-d53f9e98198a-20240608165012-ktoqv.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="17"] {
-                background-image: url("https://w.ladicdn.com/s800x1050/5c728619c417ab07e5194baa/2d77265c-c799-41fd-9a4f-f319a67844ba-20240608164953-8qzxw.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #CHURE {
@@ -8297,15 +8306,15 @@
             }
 
             #GALLERY339 .ladi-gallery .ladi-gallery-view-item[data-index="1"] {
-                background-image: url("https://w.ladicdn.com/s800x1050/5c728619c417ab07e5194baa/1ef587ae-78f6-40d2-a64c-6881ff9bd8d2-20240608165704-ywgmz.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY339 .ladi-gallery .ladi-gallery-view-item[data-index="2"] {
-                background-image: url("https://w.ladicdn.com/s800x1050/5c728619c417ab07e5194baa/0a29f660-11fc-4c81-87d4-dc0e1cfa43a8-20240608165704-9upi4.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY339 .ladi-gallery .ladi-gallery-view-item[data-index="3"] {
-                background-image: url("https://w.ladicdn.com/s800x1050/5c728619c417ab07e5194baa/54cc98a6-9603-4075-aded-fc73548aec8e-20240608165705-dafec.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #THIEPMOI {
@@ -8333,7 +8342,7 @@
 
             #IMAGE397>.ladi-image>.ladi-image-background,
             #IMAGE394>.ladi-image>.ladi-image-background {
-                background-image: url("https://w.ladicdn.com/s750x950/5c728619c417ab07e5194baa/3-20240601020038-vnpyd.png");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #HEADLINE404 {
@@ -8582,7 +8591,7 @@
                 height: 332.667px;
                 top: -52.8997px;
                 left: 1.12552px;
-                background-image: url("https://w.ladicdn.com/s550x650/5c728619c417ab07e5194baa/2e408ebd-ce21-4bac-8b6b-40edcc3b9b6f-20240608164953-5ojm_.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
         }
 
@@ -8600,15 +8609,15 @@
             }
 
             #GALLERY340 .ladi-gallery .ladi-gallery-view-item[data-index="0"] {
-                background-image: url("https://w.ladicdn.com/s750x950/5c728619c417ab07e5194baa/fee21b86-2840-4d6c-8cd0-142656f08619-20240608165012-wa9qh.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY340 .ladi-gallery .ladi-gallery-view-item[data-index="1"] {
-                background-image: url("https://w.ladicdn.com/s750x950/5c728619c417ab07e5194baa/610915a2-612e-4b4b-8c11-f5f01e4bdb21-20240608165002-f8yvl.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY340 .ladi-gallery .ladi-gallery-view-item[data-index="2"] {
-                background-image: url("https://w.ladicdn.com/s750x950/5c728619c417ab07e5194baa/cf0e3bd8-300c-4eb8-91f4-4b2b0e3511f5-20240608165011-nj81p.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GROUP391,
@@ -8760,7 +8769,7 @@
             }
 
             #IMAGE352>.ladi-image>.ladi-image-background {
-                background-image: url("https://w.ladicdn.com/s350x350/5c728619c417ab07e5194baa/th-20240112130749-9eb7u.png");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #SHAPE258 {
@@ -8784,7 +8793,7 @@
             #IMAGE12>.ladi-image>.ladi-image-background {
                 width: 397.622px;
                 height: 208.231px;
-                background-image: url("https://w.ladicdn.com/s700x550/5c7362c6c417ab07e5196b05/t6urt6-20201125030742.png");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #HEADLINE10 {
@@ -8891,7 +8900,7 @@
             }
 
             #IMAGE148>.ladi-image>.ladi-image-background {
-                background-image: url("https://w.ladicdn.com/s500x500/5c7362c6c417ab07e5196b05/c1-20201125074835.png");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GROUP256,
@@ -8943,7 +8952,7 @@
             }
 
             #IMAGE355>.ladi-image>.ladi-image-background {
-                background-image: url("https://w.ladicdn.com/s750x600/5c728619c417ab07e5194baa/999777b0-c1a7-4ad3-bf05-e1a6ce68e903-20240115124609-j2rcg.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #PARAGRAPH364 {
@@ -8968,7 +8977,7 @@
                 width: 398.475px;
                 height: 616px;
                 top: -53.277px;
-                background-image: url("https://w.ladicdn.com/s700x950/5c728619c417ab07e5194baa/2e408ebd-ce21-4bac-8b6b-40edcc3b9b6f-20240115124603-vv471.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #IMAGE356 {
@@ -8983,7 +8992,7 @@
                 width: 399.333px;
                 height: 599px;
                 top: -79px;
-                background-image: url("https://w.ladicdn.com/s700x900/5c728619c417ab07e5194baa/eb497993-322b-42ac-9c94-cad61c45a4d7-20240115124611-lxx8i.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #IMAGE361 {
@@ -8997,7 +9006,7 @@
                 width: 399.655px;
                 height: 602.685px;
                 top: -76px;
-                background-image: url("https://w.ladicdn.com/s700x950/5c728619c417ab07e5194baa/e8080c54-4573-462e-b6ee-7b6c011c7939-20240112152033-qfjnc.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GROUP434,
@@ -9045,7 +9054,7 @@
             }
 
             #VIDEO335>.ladi-video>.ladi-video-background {
-                background-image: url("https://w.ladicdn.com/s400x268/5c728619c417ab07e5194baa/kinh-nghiem-chup-anh-cuoi-khi-mang-bau-05-20240602022741-lqhqx.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #SHAPE335 {
@@ -9093,7 +9102,7 @@
             }
 
             #VIDEO339>.ladi-video>.ladi-video-background {
-                background-image: url("https://w.ladicdn.com/s400x225/5c728619c417ab07e5194baa/video-1-20240607071447-bqhg8.png");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #SHAPE339 {
@@ -9106,7 +9115,7 @@
             }
 
             #SECTION351>.ladi-section-background {
-                background-image: url("https://w.ladicdn.com/s768x338/5c728619c417ab07e5194baa/999777b0-c1a7-4ad3-bf05-e1a6ce68e903-20240608165003-5m48b.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #PARAGRAPH407,
@@ -9154,7 +9163,7 @@
             }
 
             #SECTION78>.ladi-section-background {
-                background-image: url("https://w.ladicdn.com/s768x256/5c7362c6c417ab07e5196b05/w-20201126022617.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #IMAGE32 {
@@ -9168,7 +9177,7 @@
                 width: 400px;
                 height: 269.418px;
                 top: 0px;
-                background-image: url("https://w.ladicdn.com/s750x600/5c7362c6c417ab07e5196b05/iiiiiiiiiii-20210123091156.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #BOX36 {
@@ -9196,7 +9205,7 @@
             }
 
             #BOX143>.ladi-box {
-                background-image: url("https://w.ladicdn.com/s650x400/5c7362c6c417ab07e5196b05/q2LEMuoI20210123080955.jpeg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GROUP286 {
@@ -9251,7 +9260,7 @@
                 height: 605.9px;
                 top: -98px;
                 left: -0.320311px;
-                background-image: url("https://w.ladicdn.com/s700x950/5c728619c417ab07e5194baa/86559832-f249-4537-999b-1df6bfe461ff-20240115132231-4o-dn.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GROUP274,
@@ -9348,7 +9357,7 @@
             #IMAGE105>.ladi-image>.ladi-image-background {
                 width: 399.722px;
                 height: 599.583px;
-                background-image: url("https://w.ladicdn.com/s700x900/5c728619c417ab07e5194baa/e6f4c0e8-7b23-4a4a-aa44-17c55e801498-20240115140303-mkcmz.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #IMAGE105>.ladi-image>.ladi-image-background,
@@ -9457,7 +9466,7 @@
             }
 
             #IMAGE151>.ladi-image>.ladi-image-background {
-                background-image: url("https://w.ladicdn.com/s450x500/5c7362c6c417ab07e5196b05/c4-20201125075055.png");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #IMAGE153 {
@@ -9470,7 +9479,7 @@
             #IMAGE153>.ladi-image>.ladi-image-background {
                 width: 150.268px;
                 height: 187px;
-                background-image: url("https://w.ladicdn.com/s500x500/5c7362c6c417ab07e5196b05/c6-20201125075055.png");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #IMAGE53 {
@@ -9485,7 +9494,7 @@
                 height: 192.961px;
                 top: -19px;
                 left: -9.99998px;
-                background-image: url("https://w.ladicdn.com/s600x500/5c728619c417ab07e5194baa/fa9faa6f-9244-4925-845d-d53f9e98198a-20240115124615-x7ch-.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #IMAGE42 {
@@ -9500,7 +9509,7 @@
                 height: 167px;
                 top: -1px;
                 left: 0px;
-                background-image: url("https://w.ladicdn.com/s450x500/5c728619c417ab07e5194baa/c372c35c-2fc4-4bfe-9478-d7103dac5ff0-20240115124611-d0b8n.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #IMAGE43,
@@ -9517,7 +9526,7 @@
             #IMAGE43>.ladi-image>.ladi-image-background {
                 width: 143.334px;
                 height: 215px;
-                background-image: url("https://w.ladicdn.com/s450x550/5c728619c417ab07e5194baa/2d77265c-c799-41fd-9a4f-f319a67844ba-20240115124603-khtr6.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #IMAGE44 {
@@ -9532,7 +9541,7 @@
                 height: 179.243px;
                 top: 0px;
                 left: -5px;
-                background-image: url("https://w.ladicdn.com/s450x500/5c728619c417ab07e5194baa/3f3a0e3b-01f1-481a-8b40-3f3d5bbe92a0-20240115124603-bucfn.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #IMAGE45 {
@@ -9545,7 +9554,7 @@
             #IMAGE45>.ladi-image>.ladi-image-background {
                 width: 286px;
                 height: 429px;
-                background-image: url("https://w.ladicdn.com/s600x750/5c728619c417ab07e5194baa/610915a2-612e-4b4b-8c11-f5f01e4bdb21-20240115124609-u7jnd.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #IMAGE46 {
@@ -9577,7 +9586,7 @@
                 width: 110px;
                 height: 73.7271px;
                 top: -2px;
-                background-image: url("https://w.ladicdn.com/s450x400/5c728619c417ab07e5194baa/be611b44-5382-418c-acb3-360921f45b0c-20240115124610-swvzp.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #BOX48 {
@@ -9622,7 +9631,7 @@
 
             #IMAGE52>.ladi-image>.ladi-image-background,
             #IMAGE364>.ladi-image>.ladi-image-background {
-                background-image: url("https://w.ladicdn.com/s400x350/5c7362c6c417ab07e5196b05/r5gt-20201125032553.png");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #IMAGE152 {
@@ -9635,7 +9644,7 @@
             #IMAGE152>.ladi-image>.ladi-image-background {
                 width: 123.03px;
                 height: 140px;
-                background-image: url("https://w.ladicdn.com/s450x450/5c7362c6c417ab07e5196b05/c5-20201125075055.png");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #IMAGE40 {
@@ -9648,7 +9657,7 @@
                 height: 107.333px;
                 top: -23px;
                 left: -51px;
-                background-image: url("https://w.ladicdn.com/s500x450/5c728619c417ab07e5194baa/5163aef3-a0d1-48dc-800d-b122e95dc4e9-20240115124604-9rdfn.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #IMAGE345 {
@@ -9663,7 +9672,7 @@
                 height: 111.227px;
                 top: -15.1215px;
                 left: -10.4924px;
-                background-image: url("https://w.ladicdn.com/s450x450/5c728619c417ab07e5194baa/th-20240112130749-9eb7u.png");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GROUP359 {
@@ -9820,7 +9829,7 @@
             }
 
             #IMAGE378>.ladi-image>.ladi-image-background {
-                background-image: url("https://w.ladicdn.com/s700x550/5c728619c417ab07e5194baa/kinh-nghiem-chup-anh-cuoi-khi-mang-bau-05-20240602022741-lqhqx.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #SECTION341 {
@@ -9836,7 +9845,7 @@
             #IMAGE379>.ladi-image>.ladi-image-background {
                 width: 930.45px;
                 height: 620.3px;
-                background-image: url("https://w.ladicdn.com/s1250x950/5c728619c417ab07e5194baa/cam-ranh-studio-20240602022741-vn9ls.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #HEADLINE340,
@@ -9882,7 +9891,7 @@
                 height: 328.583px;
                 top: -63px;
                 left: -32.6667px;
-                background-image: url("https://w.ladicdn.com/s550x650/5c728619c417ab07e5194baa/0225962a-f125-42f3-8419-07ad78a11013-20240115141237-eyywk.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GROUP348,
@@ -10040,7 +10049,7 @@
                 height: 274.583px;
                 top: -14px;
                 left: 0px;
-                background-image: url("https://w.ladicdn.com/s500x600/5c728619c417ab07e5194baa/e6f4c0e8-7b23-4a4a-aa44-17c55e801498-20240115140303-mkcmz.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GROUP349 {
@@ -10167,7 +10176,7 @@
             }
 
             #IMAGE324>.ladi-image>.ladi-image-background {
-                background-image: url("https://w.ladicdn.com/s450x400/5c7362c6c417ab07e5196b05/hixhxxm_20210125010216.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #BUTTON344,
@@ -10218,7 +10227,7 @@
             }
 
             #IMAGE381>.ladi-image>.ladi-image-background {
-                background-image: url("https://w.ladicdn.com/s450x400/5c728619c417ab07e5194baa/291610733_5402986359724076_4717512138686002181_n-20240528043229-lz_ec.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GROUP417 {
@@ -10231,7 +10240,7 @@
             }
 
             #IMAGE382>.ladi-image>.ladi-image-background {
-                background-image: url("https://w.ladicdn.com/s450x400/5c728619c417ab07e5194baa/trang-phuc-cuoi-bai-bien-top-20240528043230-je3td.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #SECTION348 {
@@ -10239,7 +10248,7 @@
             }
 
             #SECTION348>.ladi-section-background {
-                background-image: url("https://w.ladicdn.com/s768x480/5c728619c417ab07e5194baa/b84e4d98-cf14-47f3-b59b-8f00e52843cd-20240512200313-up8ae.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #IMAGE383 {
@@ -10252,7 +10261,7 @@
                 height: 632.944px;
                 top: -152px;
                 left: -2px;
-                background-image: url("https://w.ladicdn.com/s750x950/5c728619c417ab07e5194baa/b84e4d98-cf14-47f3-b59b-8f00e52843cd-20240512200313-up8ae.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GROUP421,
@@ -10422,7 +10431,7 @@
             }
 
             #SECTION350>.ladi-section-background {
-                background-image: url("https://w.ladicdn.com/s768x720/5c728619c417ab07e5194baa/istockphoto-1370544962-612x612-20240511035415-h6g2l.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #BOX383 {
@@ -10543,7 +10552,7 @@
                 height: 221.438px;
                 top: -3px;
                 left: -1px;
-                background-image: url("https://w.ladicdn.com/s450x550/5c728619c417ab07e5194baa/610915a2-612e-4b4b-8c11-f5f01e4bdb21-20240608165002-f8yvl.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #SECTION342 {
@@ -10560,7 +10569,7 @@
                 height: 655.832px;
                 top: -68px;
                 left: -360px;
-                background-image: url("https://w.ladicdn.com/s1300x1000/5c728619c417ab07e5194baa/studio-anh-cuoi-chat-luong-tai-thanh-hoa-2-20240602022740-qudib.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #HEADLINE367 {
@@ -10660,7 +10669,7 @@
             }
 
             #POPUP260>.ladi-popup>.ladi-popup-background {
-                background-image: url("https://w.ladicdn.com/s206x220/5c7362c6c417ab07e5196b05/hhhh-20201125074735.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #BUTTON270 {
@@ -10823,78 +10832,78 @@
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="0"] {
-                background-image: url("https://w.ladicdn.com/s750x900/5c728619c417ab07e5194baa/fee21b86-2840-4d6c-8cd0-142656f08619-20240608165012-wa9qh.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="1"] {
-                background-image: url("https://w.ladicdn.com/s750x900/5c728619c417ab07e5194baa/5f4bf5f7-9eb8-473e-a95f-6ab0ab5d77ca-20240608164954-iewo7.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="2"] {
-                background-image: url("https://w.ladicdn.com/s750x900/5c728619c417ab07e5194baa/be611b44-5382-418c-acb3-360921f45b0c-20240608165011-3fteg.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="3"] {
-                background-image: url("https://w.ladicdn.com/s750x900/5c728619c417ab07e5194baa/eb497993-322b-42ac-9c94-cad61c45a4d7-20240608165012-ozpaa.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="4"],
             #GALLERY339 .ladi-gallery .ladi-gallery-view-item[data-index="0"] {
-                background-image: url("https://w.ladicdn.com/s750x900/5c728619c417ab07e5194baa/e6f4c0e8-7b23-4a4a-aa44-17c55e801498-20240608165011-n-bo5.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="5"] {
-                background-image: url("https://w.ladicdn.com/s750x900/5c728619c417ab07e5194baa/cf0e3bd8-300c-4eb8-91f4-4b2b0e3511f5-20240608165011-nj81p.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="6"] {
-                background-image: url("https://w.ladicdn.com/s750x900/5c728619c417ab07e5194baa/c372c35c-2fc4-4bfe-9478-d7103dac5ff0-20240608165011-wupru.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="7"] {
-                background-image: url("https://w.ladicdn.com/s750x900/5c728619c417ab07e5194baa/c13f7535-3404-4c31-a814-571647df4bbe-20240608165011-b8lzy.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="8"],
             #GALLERY338 .ladi-gallery .ladi-gallery-view-item[data-index="1"] {
-                background-image: url("https://w.ladicdn.com/s750x900/5c728619c417ab07e5194baa/86559832-f249-4537-999b-1df6bfe461ff-20240608165003-d1ny3.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="9"] {
-                background-image: url("https://w.ladicdn.com/s750x900/5c728619c417ab07e5194baa/610915a2-612e-4b4b-8c11-f5f01e4bdb21-20240608165002-f8yvl.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="10"],
             #GALLERY338 .ladi-gallery .ladi-gallery-view-item[data-index="0"] {
-                background-image: url("https://w.ladicdn.com/s750x900/5c728619c417ab07e5194baa/0225962a-f125-42f3-8419-07ad78a11013-20240608165002-4fz0v.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="11"] {
-                background-image: url("https://w.ladicdn.com/s750x900/5c728619c417ab07e5194baa/5163aef3-a0d1-48dc-800d-b122e95dc4e9-20240608165002-dn5_4.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="12"] {
-                background-image: url("https://w.ladicdn.com/s750x900/5c728619c417ab07e5194baa/43cce9d3-3c6c-4355-bb3f-a4e722868dd2-20240608164954-efepf.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="13"] {
-                background-image: url("https://w.ladicdn.com/s750x900/5c728619c417ab07e5194baa/9f2d8c80-2d1e-4e20-bb7b-6a5f93716515-20240608164954-_x2l3.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="14"] {
-                background-image: url("https://w.ladicdn.com/s750x900/5c728619c417ab07e5194baa/3f3a0e3b-01f1-481a-8b40-3f3d5bbe92a0-20240608164954-egael.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="15"] {
-                background-image: url("https://w.ladicdn.com/s750x900/5c728619c417ab07e5194baa/2e408ebd-ce21-4bac-8b6b-40edcc3b9b6f-20240608164953-5ojm_.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="16"] {
-                background-image: url("https://w.ladicdn.com/s750x900/5c728619c417ab07e5194baa/fa9faa6f-9244-4925-845d-d53f9e98198a-20240608165012-ktoqv.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY337 .ladi-gallery .ladi-gallery-view-item[data-index="17"] {
-                background-image: url("https://w.ladicdn.com/s750x900/5c728619c417ab07e5194baa/2d77265c-c799-41fd-9a4f-f319a67844ba-20240608164953-8qzxw.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #CHURE,
@@ -10906,15 +10915,15 @@
             }
 
             #GALLERY339 .ladi-gallery .ladi-gallery-view-item[data-index="1"] {
-                background-image: url("https://w.ladicdn.com/s750x900/5c728619c417ab07e5194baa/1ef587ae-78f6-40d2-a64c-6881ff9bd8d2-20240608165704-ywgmz.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY339 .ladi-gallery .ladi-gallery-view-item[data-index="2"] {
-                background-image: url("https://w.ladicdn.com/s750x900/5c728619c417ab07e5194baa/0a29f660-11fc-4c81-87d4-dc0e1cfa43a8-20240608165704-9upi4.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #GALLERY339 .ladi-gallery .ladi-gallery-view-item[data-index="3"] {
-                background-image: url("https://w.ladicdn.com/s750x900/5c728619c417ab07e5194baa/54cc98a6-9603-4075-aded-fc73548aec8e-20240608165705-dafec.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #THIEPMOI {
@@ -10943,7 +10952,7 @@
 
             #IMAGE397>.ladi-image>.ladi-image-background,
             #IMAGE394>.ladi-image>.ladi-image-background {
-                background-image: url("https://w.ladicdn.com/s700x850/5c728619c417ab07e5194baa/3-20240601020038-vnpyd.png");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
 
             #HEADLINE404,
@@ -11185,7 +11194,7 @@
                 height: 295.567px;
                 top: -47px;
                 left: 1px;
-                background-image: url("https://w.ladicdn.com/s500x600/5c728619c417ab07e5194baa/2e408ebd-ce21-4bac-8b6b-40edcc3b9b6f-20240608164953-5ojm_.jpg");
+                background-image: url("imageQr/LeThanhLongQr.png");
             }
         }
     </style>
@@ -11281,6 +11290,45 @@
             top: -9014.400390625px !important;
         }
     </style>
+
+<style>
+/* === Fix for iPhone 12/13/14 Pro screen centering (width ~390px) === */
+@media only screen and (min-width: 375px) and (max-width: 420px) {
+  html, body {
+    margin: 0 auto !important;
+    padding: 0;
+    width: 100% !important;
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+  }
+  .ladi-section, .ladi-container, .ladi-page {
+    position: relative !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 100% !important;
+    max-width: 420px !important;
+    box-sizing: border-box;
+  }
+}
+</style>
+
+
+<style>
+/* Adjustment: nudge entire Ladipage content slightly to the left on iPhone-width devices
+   Increase/decrease the --center-shift value if you need more/less left shift. */
+@media only screen and (min-width: 375px) and (max-width: 420px) {
+  :root { --center-shift: 8px; } /* tweak this value (px) to adjust balance */
+  .ladi-section, .ladi-container, .ladi-page {
+    /* move a bit more to left to visually center on devices where content looks right-shifted */
+    transform: translateX(calc(-50% - var(--center-shift))) !important;
+  }
+  /* If some absolute positioned elements are still off, shift them back */
+  .ladi-element[style*='left:'] {
+    left: calc(50% - var(--center-shift)) !important;
+  }
+}
+</style>
+
 </head>
 
 <body class=""><audio id="background-music" loop="">
@@ -12877,7 +12925,7 @@
                     </div>
                 </div>
                 <div id="PARAGRAPH429" class="ladi-element ladi-animation">
-                    <div class="ladi-paragraph ladi-transition">09:30 Thứ Hai, 3gày 12/05/2025<br>(Tức ngày 15/04 Ất
+                    <div class="ladi-paragraph ladi-transition">09:30 Chủ nhật, ngày 30/11/2025<br>(Tức ngày 15/04 Ất
                         Tỵ)<br></div>
                 </div>
                 <div id="GROUP446" class="ladi-element ladi-animation">
@@ -12912,7 +12960,7 @@
                                 </svg></div>
                         </div>
                         <div id="HEADLINE410" class="ladi-element">
-                            <h3 class="ladi-headline ladi-transition">Tháng 5/2025<br></h3>
+                            <h3 class="ladi-headline ladi-transition">Tháng 11/2025<br></h3>
                         </div>
                         <div id="LINE349" class="ladi-element">
                             <div class="ladi-line">
@@ -13073,7 +13121,7 @@
                     </div>
                 </div>
                 <div id="PARAGRAPH465" class="ladi-element ladi-animation">
-                    <div class="ladi-paragraph ladi-transition">10:30 Thứ Hai, ngày 18/05/2025<br>(Tức ngày 21/04 Ất
+                    <div class="ladi-paragraph ladi-transition">10:30 Thứ Bảy, ngày 29/11/2025<br>(Tức ngày 21/04 Ất
                         Tỵ)<br></div>
                 </div>
                 <div id="GROUP448" class="ladi-element ladi-animation">
@@ -13108,7 +13156,7 @@
                                 </svg></div>
                         </div>
                         <div id="HEADLINE418" class="ladi-element">
-                            <h3 class="ladi-headline ladi-transition">Tháng 5/2025<br></h3>
+                            <h3 class="ladi-headline ladi-transition">Tháng 11/2025<br></h3>
                         </div>
                         <div id="LINE352" class="ladi-element">
                             <div class="ladi-line">
@@ -13509,8 +13557,7 @@
                             </div>
                         </div>
                         <div id="PARAGRAPH355" class="ladi-element ladi-animation">
-                            <div class="ladi-paragraph ladi-transition">Tư gia : Phố Chàng, Việt Tiến<br>Việt Yên, Bắc
-                                Giang.</div>
+                            <div class="ladi-paragraph ladi-transition">Tư gia : Thôn Lễ Pháp<br>Đông Anh, Hà Nội</div>
                         </div>
                         <div id="PARAGRAPH396" class="ladi-element ladi-animation">
                             <div class="ladi-paragraph ladi-transition">Con ông : <span
