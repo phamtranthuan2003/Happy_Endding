@@ -11177,6 +11177,34 @@
             top: -9014.400390625px !important;
         }
     </style>
+    <style>
+@media screen and (max-width: 414px) {
+
+    /* Nới rộng paragraph, vẫn đảm bảo không tràn viền */
+    .ladi-paragraph {
+        width: calc(100% - 20px) !important;  /* rộng gần full */
+        max-width: 100% !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+
+        /* Căn giữa đúng chuẩn */
+        left: 0 !important;
+        right: 0 !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    /* Nội dung text không bị hẹp */
+    .ladi-paragraph p,
+    .ladi-paragraph div {
+        margin: 0 !important;
+        line-height: 1.5 !important;
+        word-break: break-word !important;
+        text-align: justify !important;
+    }
+}
+</style>
+
 </head>
 
 <body class=""><audio id="background-music" loop="">
